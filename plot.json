@@ -1,0 +1,2602 @@
+{
+ "geoms": {
+ "geom1_ribbon_overview": {
+ "geom": "ribbon",
+"classed": "geom1_ribbon_overview",
+"aes": {
+"x": "Nentraînement",
+"ymin": "regr.mse_mean - regr.mse_sd",
+"ymax": "regr.mse_mean + regr.mse_sd",
+"group": "Algorithme",
+"fill": "Algorithme",
+"showSelected1": "Algorithme"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "transparent",
+"alpha":      0.5,
+"help": "Moyenne ± écart type sur 6 blocs dans la validation croisée",
+"showSelected": "Algorithme",
+"help_showSelected": "Algorithme" 
+},
+"types": {
+"fill": "rgb",
+"ymin": "numeric",
+"ymax": "numeric",
+"x": "numeric",
+"group": "character",
+"showSelected1": "character",
+"PANEL": "factor",
+"colour": "rgb"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"PANEL",
+"group" 
+],
+"subset_order": [
+ "showSelected1",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom2_line_overview": {
+ "geom": "line",
+"classed": "geom2_line_overview",
+"aes": {
+"x": "Nentraînement",
+"y": "regr.mse_mean",
+"group": "Algorithme",
+"showSelected1": "Algorithme"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "#BEBEBE",
+"help": "Moyenne sur 6 blocs dans la validation croisée",
+"showSelected": "Algorithme",
+"help_showSelected": "Algorithme" 
+},
+"types": {
+"y": "numeric",
+"x": "numeric",
+"group": "character",
+"showSelected1": "character",
+"PANEL": "factor"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"PANEL",
+"group" 
+],
+"subset_order": [
+ "showSelected1",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom3_point_overview": {
+ "geom": "point",
+"classed": "geom3_point_overview",
+"aes": {
+"x": "Nentraînement",
+"y": "regr.mse_mean",
+"colour": "difference",
+"size": "Algorithme",
+"fill": "Algorithme",
+"showSelected1": "difference",
+"showSelected2": "Algorithme"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"help": "Moyenne sur 6 blocs dans la validation croisée",
+"showSelected": [ "difference", "Algorithme" ],
+"help_showSelected": [ "difference", "Algorithme" ] 
+},
+"types": {
+"size": "numeric",
+"fill": "rgb",
+"colour": "character",
+"y": "numeric",
+"x": "numeric",
+"showSelected1": "character",
+"showSelected2": "character",
+"PANEL": "factor",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"showSelected2",
+"PANEL" 
+],
+"subset_order": [
+ "showSelected1",
+"showSelected2",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom4_segment_overview": {
+ "geom": "segment",
+"classed": "geom4_segment_overview",
+"aes": {
+"x": "Nentraînement",
+"y": "10^mean.rpart",
+"key": "1",
+"xend": "Nentraînement",
+"yend": "10^mean.featureless",
+"showSelected1": "tendence_difficulté_Nentraînement"
+},
+"params": {
+ "lineend": "butt",
+"na.rm": false,
+"na.rm": false,
+"size":        3,
+"alpha":      0.5,
+"showSelected": "tendence_difficulté_Nentraînement",
+"help": "Segment gris pour la différence entre rpart et sans caractères",
+"help_showSelected": "tendence_difficulté_Nentraînement" 
+},
+"types": {
+"y": "numeric",
+"yend": "numeric",
+"x": "numeric",
+"xend": "numeric",
+"key": "numeric",
+"showSelected1": "character",
+"PANEL": "factor",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"PANEL" 
+],
+"subset_order": [
+ "showSelected1",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom5_text_overview": {
+ "geom": "text",
+"classed": "geom5_text_overview",
+"aes": {
+"x": "Nentraînement",
+"y": "10^pmax(mean.rpart, mean.featureless) * 1.1",
+"key": "1",
+"hjust": "ifelse(Nentraînement < mid.x, 0, 1)",
+"label": "fcase(p.value < 1e-04, \"p<0.0001\", is.nan(p.value), \"Diff=0\", default = sprintf(\"p=%.4f\", p.value))",
+"showSelected1": "tendence_difficulté_Nentraînement"
+},
+"params": {
+ "parse": false,
+"check_overlap": false,
+"na.rm": false,
+"na.rm": false,
+"showSelected": "tendence_difficulté_Nentraînement",
+"help": "Probabilité critique dans un test de Student, différence entre rpart et sans caractères",
+"help_showSelected": "tendence_difficulté_Nentraînement" 
+},
+"types": {
+"y": "numeric",
+"x": "numeric",
+"key": "numeric",
+"label": "character",
+"showSelected1": "character",
+"PANEL": "factor",
+"group": "character",
+"anchor": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"PANEL" 
+],
+"subset_order": [
+ "showSelected1",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom6_rect_overview": {
+ "geom": "rect",
+"classed": "geom6_rect_overview",
+"aes": {
+"xmin": "xmin",
+"xmax": "xmax",
+"ymin": "0",
+"ymax": "Inf",
+"clickSelects": "tendence_difficulté_Nentraînement"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"alpha":      0.1,
+"fill": "#000000",
+"colour": "transparent",
+"help": "Rectangle gris pour la sélection de tendence, difficulté, nombre d’échantillons d’entraînement",
+"clickSelects": "tendence_difficulté_Nentraînement",
+"help_clickSelects": "tendence_difficulté_Nentraînement" 
+},
+"types": {
+"ymin": "numeric",
+"ymax": "numeric",
+"xmin": "numeric",
+"xmax": "numeric",
+"clickSelects": "character",
+"PANEL": "factor",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "PANEL" 
+],
+"subset_order": [
+ "PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom7_abline_scatter": {
+ "geom": "segment",
+"classed": "geom7_abline_scatter",
+"aes": {
+"slope": "slope",
+"intercept": "intercept"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "#7F7F7F",
+"help": "Ligne diagonale pour l’égalité des taux d’erreur" 
+},
+"is_abline": true,
+"abline_params": {
+ "slopes":        1,
+"intercepts":        0 
+},
+"types": {
+"slope": "numeric",
+"intercept": "numeric",
+"PANEL": "integer",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [],
+"subset_order": [],
+"chunks": 1,
+"total": 1 
+},
+"geom8_segment_scatter": {
+ "geom": "segment",
+"classed": "geom8_segment_scatter",
+"aes": {
+"x": "x",
+"y": "y",
+"xend": "xend",
+"yend": "yend",
+"colour": "Algorithme",
+"showSelected1": "Algorithme"
+},
+"params": {
+ "lineend": "butt",
+"na.rm": false,
+"na.rm": false,
+"alpha":      0.5,
+"size":        5,
+"help": "Segments pour les couleurs de chaque Algorithme",
+"showSelected": "Algorithme",
+"help_showSelected": "Algorithme" 
+},
+"types": {
+"colour": "rgb",
+"x": "numeric",
+"xend": "numeric",
+"y": "numeric",
+"yend": "numeric",
+"showSelected1": "character",
+"PANEL": "integer",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom9_point_scatter": {
+ "geom": "point",
+"classed": "geom9_point_scatter",
+"aes": {
+"x": "10^featureless",
+"y": "10^rpart",
+"key": "bloc.test",
+"tooltip": "sprintf(\"fold %d featureless=%.3f rpart=%.3f\", bloc.test, featureless, rpart)",
+"clickSelects": "bloc.test",
+"showSelected1": "tendence_difficulté_Nentraînement"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"size":        5,
+"alpha":      0.7,
+"showSelected": "tendence_difficulté_Nentraînement",
+"help": "Un cercle pour chaque bloc dans la validation croisée",
+"clickSelects": "bloc.test",
+"help_showSelected": "tendence_difficulté_Nentraînement",
+"help_clickSelects": "bloc.test" 
+},
+"types": {
+"x": "numeric",
+"y": "numeric",
+"key": "integer",
+"tooltip": "character",
+"clickSelects": "integer",
+"showSelected1": "character",
+"PANEL": "integer",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom10_point_details": {
+ "geom": "point",
+"classed": "geom10_point_details",
+"aes": {
+"x": "regr.mse",
+"y": "Algorithme",
+"key": "paste0(Algorithme, bloc.test)",
+"colour": "Algorithme",
+"tooltip": "sprintf(\"%s bloc %d MSE=%.3f\", Algorithme, bloc.test, regr.mse)",
+"clickSelects": "bloc.test",
+"showSelected1": "Algorithme",
+"showSelected2": "tendence_difficulté_Nentraînement"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"alpha":      0.7,
+"size":        5,
+"showSelected": [ "Algorithme", "tendence_difficulté_Nentraînement" ],
+"help": "Un cercle pour chaque division et Algorithmee",
+"clickSelects": "bloc.test",
+"help_showSelected": [ "Algorithme", "tendence_difficulté_Nentraînement" ],
+"help_clickSelects": "bloc.test" 
+},
+"types": {
+"colour": "rgb",
+"y": "integer",
+"x": "numeric",
+"key": "character",
+"tooltip": "character",
+"clickSelects": "integer",
+"showSelected1": "character",
+"showSelected2": "character",
+"PANEL": "integer",
+"group": "character",
+"fill": "rgb"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"subset_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom11_point_pred": {
+ "geom": "point",
+"classed": "geom11_point_pred",
+"aes": {
+"x": "x",
+"y": "y",
+"key": "row_id",
+"showSelected1": "tendence_difficulté_Nentraînement",
+"showSelected2": "bloc.test"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"size":        3,
+"fill": "#FFFFFF",
+"colour": "#7F7F7F",
+"showSelected": [ "tendence_difficulté_Nentraînement", "bloc.test" ],
+"help": "Un cercle pour chaque échantillon test (gauche) et entraînement (droite).",
+"help_showSelected": [ "tendence_difficulté_Nentraînement", "bloc.test" ] 
+},
+"types": {
+"x": "numeric",
+"y": "numeric",
+"key": "integer",
+"showSelected1": "character",
+"showSelected2": "integer",
+"PANEL": "integer",
+"group": "character"
+},
+"chunk_order": [
+ "tendence_difficulté_Nentraînement",
+"bloc.test" 
+],
+"nest_order": [],
+"subset_order": [],
+"columns": {
+ "common": [
+ "group",
+"key" 
+] 
+},
+"chunks": {
+ "constante dificile 10": {
+ "1": 1,
+"2": 2,
+"3": 3,
+"4": 4,
+"5": 5,
+"6": 6 
+},
+"constante dificile 100": {
+ "1": 7,
+"2": 8,
+"3": 9,
+"4": 10,
+"5": 11,
+"6": 12 
+},
+"constante dificile 1000": {
+ "1": 13,
+"2": 14,
+"3": 15,
+"4": 16,
+"5": 17,
+"6": 18 
+},
+"constante dificile 17": {
+ "1": 19,
+"2": 20,
+"3": 21,
+"4": 22,
+"5": 23,
+"6": 24 
+},
+"constante dificile 178": {
+ "1": 25,
+"2": 26,
+"3": 27,
+"4": 28,
+"5": 29,
+"6": 30 
+},
+"constante dificile 31": {
+ "1": 31,
+"2": 32,
+"3": 33,
+"4": 34,
+"5": 35,
+"6": 36 
+},
+"constante dificile 316": {
+ "1": 37,
+"2": 38,
+"3": 39,
+"4": 40,
+"5": 41,
+"6": 42 
+},
+"constante dificile 56": {
+ "1": 43,
+"2": 44,
+"3": 45,
+"4": 46,
+"5": 47,
+"6": 48 
+},
+"constante dificile 563": {
+ "1": 49,
+"2": 50,
+"3": 51,
+"4": 52,
+"5": 53,
+"6": 54 
+},
+"constante facile 10": {
+ "1": 55,
+"2": 56,
+"3": 57,
+"4": 58,
+"5": 59,
+"6": 60 
+},
+"constante facile 100": {
+ "1": 61,
+"2": 62,
+"3": 63,
+"4": 64,
+"5": 65,
+"6": 66 
+},
+"constante facile 1000": {
+ "1": 67,
+"2": 68,
+"3": 69,
+"4": 70,
+"5": 71,
+"6": 72 
+},
+"constante facile 17": {
+ "1": 73,
+"2": 74,
+"3": 75,
+"4": 76,
+"5": 77,
+"6": 78 
+},
+"constante facile 178": {
+ "1": 79,
+"2": 80,
+"3": 81,
+"4": 82,
+"5": 83,
+"6": 84 
+},
+"constante facile 31": {
+ "1": 85,
+"2": 86,
+"3": 87,
+"4": 88,
+"5": 89,
+"6": 90 
+},
+"constante facile 316": {
+ "1": 91,
+"2": 92,
+"3": 93,
+"4": 94,
+"5": 95,
+"6": 96 
+},
+"constante facile 56": {
+ "1": 97,
+"2": 98,
+"3": 99,
+"4": 100,
+"5": 101,
+"6": 102 
+},
+"constante facile 563": {
+ "1": 103,
+"2": 104,
+"3": 105,
+"4": 106,
+"5": 107,
+"6": 108 
+},
+"constante impossible 10": {
+ "1": 109,
+"2": 110,
+"3": 111,
+"4": 112,
+"5": 113,
+"6": 114 
+},
+"constante impossible 100": {
+ "1": 115,
+"2": 116,
+"3": 117,
+"4": 118,
+"5": 119,
+"6": 120 
+},
+"constante impossible 1000": {
+ "1": 121,
+"2": 122,
+"3": 123,
+"4": 124,
+"5": 125,
+"6": 126 
+},
+"constante impossible 17": {
+ "1": 127,
+"2": 128,
+"3": 129,
+"4": 130,
+"5": 131,
+"6": 132 
+},
+"constante impossible 178": {
+ "1": 133,
+"2": 134,
+"3": 135,
+"4": 136,
+"5": 137,
+"6": 138 
+},
+"constante impossible 31": {
+ "1": 139,
+"2": 140,
+"3": 141,
+"4": 142,
+"5": 143,
+"6": 144 
+},
+"constante impossible 316": {
+ "1": 145,
+"2": 146,
+"3": 147,
+"4": 148,
+"5": 149,
+"6": 150 
+},
+"constante impossible 56": {
+ "1": 151,
+"2": 152,
+"3": 153,
+"4": 154,
+"5": 155,
+"6": 156 
+},
+"constante impossible 563": {
+ "1": 157,
+"2": 158,
+"3": 159,
+"4": 160,
+"5": 161,
+"6": 162 
+},
+"sin dificile 10": {
+ "1": 163,
+"2": 164,
+"3": 165,
+"4": 166,
+"5": 167,
+"6": 168 
+},
+"sin dificile 100": {
+ "1": 169,
+"2": 170,
+"3": 171,
+"4": 172,
+"5": 173,
+"6": 174 
+},
+"sin dificile 1000": {
+ "1": 175,
+"2": 176,
+"3": 177,
+"4": 178,
+"5": 179,
+"6": 180 
+},
+"sin dificile 17": {
+ "1": 181,
+"2": 182,
+"3": 183,
+"4": 184,
+"5": 185,
+"6": 186 
+},
+"sin dificile 178": {
+ "1": 187,
+"2": 188,
+"3": 189,
+"4": 190,
+"5": 191,
+"6": 192 
+},
+"sin dificile 31": {
+ "1": 193,
+"2": 194,
+"3": 195,
+"4": 196,
+"5": 197,
+"6": 198 
+},
+"sin dificile 316": {
+ "1": 199,
+"2": 200,
+"3": 201,
+"4": 202,
+"5": 203,
+"6": 204 
+},
+"sin dificile 56": {
+ "1": 205,
+"2": 206,
+"3": 207,
+"4": 208,
+"5": 209,
+"6": 210 
+},
+"sin dificile 563": {
+ "1": 211,
+"2": 212,
+"3": 213,
+"4": 214,
+"5": 215,
+"6": 216 
+},
+"sin facile 10": {
+ "1": 217,
+"2": 218,
+"3": 219,
+"4": 220,
+"5": 221,
+"6": 222 
+},
+"sin facile 100": {
+ "1": 223,
+"2": 224,
+"3": 225,
+"4": 226,
+"5": 227,
+"6": 228 
+},
+"sin facile 1000": {
+ "1": 229,
+"2": 230,
+"3": 231,
+"4": 232,
+"5": 233,
+"6": 234 
+},
+"sin facile 17": {
+ "1": 235,
+"2": 236,
+"3": 237,
+"4": 238,
+"5": 239,
+"6": 240 
+},
+"sin facile 178": {
+ "1": 241,
+"2": 242,
+"3": 243,
+"4": 244,
+"5": 245,
+"6": 246 
+},
+"sin facile 31": {
+ "1": 247,
+"2": 248,
+"3": 249,
+"4": 250,
+"5": 251,
+"6": 252 
+},
+"sin facile 316": {
+ "1": 253,
+"2": 254,
+"3": 255,
+"4": 256,
+"5": 257,
+"6": 258 
+},
+"sin facile 56": {
+ "1": 259,
+"2": 260,
+"3": 261,
+"4": 262,
+"5": 263,
+"6": 264 
+},
+"sin facile 563": {
+ "1": 265,
+"2": 266,
+"3": 267,
+"4": 268,
+"5": 269,
+"6": 270 
+},
+"sin impossible 10": {
+ "1": 271,
+"2": 272,
+"3": 273,
+"4": 274,
+"5": 275,
+"6": 276 
+},
+"sin impossible 100": {
+ "1": 277,
+"2": 278,
+"3": 279,
+"4": 280,
+"5": 281,
+"6": 282 
+},
+"sin impossible 1000": {
+ "1": 283,
+"2": 284,
+"3": 285,
+"4": 286,
+"5": 287,
+"6": 288 
+},
+"sin impossible 17": {
+ "1": 289,
+"2": 290,
+"3": 291,
+"4": 292,
+"5": 293,
+"6": 294 
+},
+"sin impossible 178": {
+ "1": 295,
+"2": 296,
+"3": 297,
+"4": 298,
+"5": 299,
+"6": 300 
+},
+"sin impossible 31": {
+ "1": 301,
+"2": 302,
+"3": 303,
+"4": 304,
+"5": 305,
+"6": 306 
+},
+"sin impossible 316": {
+ "1": 307,
+"2": 308,
+"3": 309,
+"4": 310,
+"5": 311,
+"6": 312 
+},
+"sin impossible 56": {
+ "1": 313,
+"2": 314,
+"3": 315,
+"4": 316,
+"5": 317,
+"6": 318 
+},
+"sin impossible 563": {
+ "1": 319,
+"2": 320,
+"3": 321,
+"4": 322,
+"5": 323,
+"6": 324 
+} 
+},
+"total": 324 
+},
+"geom12_line_pred": {
+ "geom": "line",
+"classed": "geom12_line_pred",
+"aes": {
+"x": "x",
+"y": "y",
+"key": "Ensemble",
+"group": "Ensemble",
+"colour": "Algorithme",
+"size": "Algorithme",
+"showSelected1": "tendence_difficulté_Nentraînement",
+"showSelected2": "Algorithme"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"help": "Courbe noir pour la fonction de prédiction idéale, utilisée pour la création de ces données",
+"showSelected": [ "tendence_difficulté_Nentraînement", "Algorithme" ],
+"help_showSelected": [ "tendence_difficulté_Nentraînement", "Algorithme" ] 
+},
+"types": {
+"size": "numeric",
+"colour": "rgb",
+"x": "numeric",
+"y": "numeric",
+"key": "character",
+"group": "character",
+"showSelected1": "character",
+"showSelected2": "character",
+"PANEL": "integer"
+},
+"chunk_order": [
+ "tendence_difficulté_Nentraînement" 
+],
+"nest_order": [
+ "showSelected2",
+"group" 
+],
+"subset_order": [
+ "showSelected2" 
+],
+"columns": {
+ "common": [
+ "group",
+"colour",
+"key",
+"showSelected2",
+"size",
+"x" 
+] 
+},
+"chunks": {
+ "constante dificile 10": 1,
+"constante dificile 100": 2,
+"constante dificile 1000": 3,
+"constante dificile 17": 4,
+"constante dificile 178": 5,
+"constante dificile 31": 6,
+"constante dificile 316": 7,
+"constante dificile 56": 8,
+"constante dificile 563": 9,
+"constante facile 10": 10,
+"constante facile 100": 11,
+"constante facile 1000": 12,
+"constante facile 17": 13,
+"constante facile 178": 14,
+"constante facile 31": 15,
+"constante facile 316": 16,
+"constante facile 56": 17,
+"constante facile 563": 18,
+"constante impossible 10": 19,
+"constante impossible 100": 20,
+"constante impossible 1000": 21,
+"constante impossible 17": 22,
+"constante impossible 178": 23,
+"constante impossible 31": 24,
+"constante impossible 316": 25,
+"constante impossible 56": 26,
+"constante impossible 563": 27,
+"sin dificile 10": 28,
+"sin dificile 100": 29,
+"sin dificile 1000": 30,
+"sin dificile 17": 31,
+"sin dificile 178": 32,
+"sin dificile 31": 33,
+"sin dificile 316": 34,
+"sin dificile 56": 35,
+"sin dificile 563": 36,
+"sin facile 10": 37,
+"sin facile 100": 38,
+"sin facile 1000": 39,
+"sin facile 17": 40,
+"sin facile 178": 41,
+"sin facile 31": 42,
+"sin facile 316": 43,
+"sin facile 56": 44,
+"sin facile 563": 45,
+"sin impossible 10": 46,
+"sin impossible 100": 47,
+"sin impossible 1000": 48,
+"sin impossible 17": 49,
+"sin impossible 178": 50,
+"sin impossible 31": 51,
+"sin impossible 316": 52,
+"sin impossible 56": 53,
+"sin impossible 563": 54 
+},
+"total": 54 
+},
+"geom13_line_pred": {
+ "geom": "line",
+"classed": "geom13_line_pred",
+"aes": {
+"x": "x",
+"y": "y",
+"key": "paste(Algorithme, Ensemble)",
+"colour": "Algorithme",
+"size": "Algorithme",
+"group": "paste(Algorithme, Ensemble)",
+"showSelected1": "tendence_difficulté_Nentraînement",
+"showSelected2": "bloc.test",
+"showSelected3": "Algorithme"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"help": "Courbes en bleue et rouge pour les fonctions de prédiction",
+"showSelected": [ "tendence_difficulté_Nentraînement", "bloc.test", "Algorithme" ],
+"help_showSelected": [ "tendence_difficulté_Nentraînement", "bloc.test", "Algorithme" ] 
+},
+"types": {
+"size": "numeric",
+"colour": "rgb",
+"x": "numeric",
+"y": "numeric",
+"key": "character",
+"group": "character",
+"showSelected1": "character",
+"showSelected2": "integer",
+"showSelected3": "character",
+"PANEL": "integer"
+},
+"chunk_order": [
+ "tendence_difficulté_Nentraînement",
+"bloc.test" 
+],
+"nest_order": [
+ "showSelected3",
+"group" 
+],
+"subset_order": [
+ "showSelected3" 
+],
+"columns": {
+ "common": [
+ "group",
+"colour",
+"key",
+"showSelected3",
+"size",
+"x" 
+] 
+},
+"chunks": {
+ "constante dificile 10": {
+ "1": 1,
+"2": 2,
+"3": 3,
+"4": 4,
+"5": 5,
+"6": 6 
+},
+"constante dificile 100": {
+ "1": 7,
+"2": 8,
+"3": 9,
+"4": 10,
+"5": 11,
+"6": 12 
+},
+"constante dificile 1000": {
+ "1": 13,
+"2": 14,
+"3": 15,
+"4": 16,
+"5": 17,
+"6": 18 
+},
+"constante dificile 17": {
+ "1": 19,
+"2": 20,
+"3": 21,
+"4": 22,
+"5": 23,
+"6": 24 
+},
+"constante dificile 178": {
+ "1": 25,
+"2": 26,
+"3": 27,
+"4": 28,
+"5": 29,
+"6": 30 
+},
+"constante dificile 31": {
+ "1": 31,
+"2": 32,
+"3": 33,
+"4": 34,
+"5": 35,
+"6": 36 
+},
+"constante dificile 316": {
+ "1": 37,
+"2": 38,
+"3": 39,
+"4": 40,
+"5": 41,
+"6": 42 
+},
+"constante dificile 56": {
+ "1": 43,
+"2": 44,
+"3": 45,
+"4": 46,
+"5": 47,
+"6": 48 
+},
+"constante dificile 563": {
+ "1": 49,
+"2": 50,
+"3": 51,
+"4": 52,
+"5": 53,
+"6": 54 
+},
+"constante facile 10": {
+ "1": 55,
+"2": 56,
+"3": 57,
+"4": 58,
+"5": 59,
+"6": 60 
+},
+"constante facile 100": {
+ "1": 61,
+"2": 62,
+"3": 63,
+"4": 64,
+"5": 65,
+"6": 66 
+},
+"constante facile 1000": {
+ "1": 67,
+"2": 68,
+"3": 69,
+"4": 70,
+"5": 71,
+"6": 72 
+},
+"constante facile 17": {
+ "1": 73,
+"2": 74,
+"3": 75,
+"4": 76,
+"5": 77,
+"6": 78 
+},
+"constante facile 178": {
+ "1": 79,
+"2": 80,
+"3": 81,
+"4": 82,
+"5": 83,
+"6": 84 
+},
+"constante facile 31": {
+ "1": 85,
+"2": 86,
+"3": 87,
+"4": 88,
+"5": 89,
+"6": 90 
+},
+"constante facile 316": {
+ "1": 91,
+"2": 92,
+"3": 93,
+"4": 94,
+"5": 95,
+"6": 96 
+},
+"constante facile 56": {
+ "1": 97,
+"2": 98,
+"3": 99,
+"4": 100,
+"5": 101,
+"6": 102 
+},
+"constante facile 563": {
+ "1": 103,
+"2": 104,
+"3": 105,
+"4": 106,
+"5": 107,
+"6": 108 
+},
+"constante impossible 10": {
+ "1": 109,
+"2": 110,
+"3": 111,
+"4": 112,
+"5": 113,
+"6": 114 
+},
+"constante impossible 100": {
+ "1": 115,
+"2": 116,
+"3": 117,
+"4": 118,
+"5": 119,
+"6": 120 
+},
+"constante impossible 1000": {
+ "1": 121,
+"2": 122,
+"3": 123,
+"4": 124,
+"5": 125,
+"6": 126 
+},
+"constante impossible 17": {
+ "1": 127,
+"2": 128,
+"3": 129,
+"4": 130,
+"5": 131,
+"6": 132 
+},
+"constante impossible 178": {
+ "1": 133,
+"2": 134,
+"3": 135,
+"4": 136,
+"5": 137,
+"6": 138 
+},
+"constante impossible 31": {
+ "1": 139,
+"2": 140,
+"3": 141,
+"4": 142,
+"5": 143,
+"6": 144 
+},
+"constante impossible 316": {
+ "1": 145,
+"2": 146,
+"3": 147,
+"4": 148,
+"5": 149,
+"6": 150 
+},
+"constante impossible 56": {
+ "1": 151,
+"2": 152,
+"3": 153,
+"4": 154,
+"5": 155,
+"6": 156 
+},
+"constante impossible 563": {
+ "1": 157,
+"2": 158,
+"3": 159,
+"4": 160,
+"5": 161,
+"6": 162 
+},
+"sin dificile 10": {
+ "1": 163,
+"2": 164,
+"3": 165,
+"4": 166,
+"5": 167,
+"6": 168 
+},
+"sin dificile 100": {
+ "1": 169,
+"2": 170,
+"3": 171,
+"4": 172,
+"5": 173,
+"6": 174 
+},
+"sin dificile 1000": {
+ "1": 175,
+"2": 176,
+"3": 177,
+"4": 178,
+"5": 179,
+"6": 180 
+},
+"sin dificile 17": {
+ "1": 181,
+"2": 182,
+"3": 183,
+"4": 184,
+"5": 185,
+"6": 186 
+},
+"sin dificile 178": {
+ "1": 187,
+"2": 188,
+"3": 189,
+"4": 190,
+"5": 191,
+"6": 192 
+},
+"sin dificile 31": {
+ "1": 193,
+"2": 194,
+"3": 195,
+"4": 196,
+"5": 197,
+"6": 198 
+},
+"sin dificile 316": {
+ "1": 199,
+"2": 200,
+"3": 201,
+"4": 202,
+"5": 203,
+"6": 204 
+},
+"sin dificile 56": {
+ "1": 205,
+"2": 206,
+"3": 207,
+"4": 208,
+"5": 209,
+"6": 210 
+},
+"sin dificile 563": {
+ "1": 211,
+"2": 212,
+"3": 213,
+"4": 214,
+"5": 215,
+"6": 216 
+},
+"sin facile 10": {
+ "1": 217,
+"2": 218,
+"3": 219,
+"4": 220,
+"5": 221,
+"6": 222 
+},
+"sin facile 100": {
+ "1": 223,
+"2": 224,
+"3": 225,
+"4": 226,
+"5": 227,
+"6": 228 
+},
+"sin facile 1000": {
+ "1": 229,
+"2": 230,
+"3": 231,
+"4": 232,
+"5": 233,
+"6": 234 
+},
+"sin facile 17": {
+ "1": 235,
+"2": 236,
+"3": 237,
+"4": 238,
+"5": 239,
+"6": 240 
+},
+"sin facile 178": {
+ "1": 241,
+"2": 242,
+"3": 243,
+"4": 244,
+"5": 245,
+"6": 246 
+},
+"sin facile 31": {
+ "1": 247,
+"2": 248,
+"3": 249,
+"4": 250,
+"5": 251,
+"6": 252 
+},
+"sin facile 316": {
+ "1": 253,
+"2": 254,
+"3": 255,
+"4": 256,
+"5": 257,
+"6": 258 
+},
+"sin facile 56": {
+ "1": 259,
+"2": 260,
+"3": 261,
+"4": 262,
+"5": 263,
+"6": 264 
+},
+"sin facile 563": {
+ "1": 265,
+"2": 266,
+"3": 267,
+"4": 268,
+"5": 269,
+"6": 270 
+},
+"sin impossible 10": {
+ "1": 271,
+"2": 272,
+"3": 273,
+"4": 274,
+"5": 275,
+"6": 276 
+},
+"sin impossible 100": {
+ "1": 277,
+"2": 278,
+"3": 279,
+"4": 280,
+"5": 281,
+"6": 282 
+},
+"sin impossible 1000": {
+ "1": 283,
+"2": 284,
+"3": 285,
+"4": 286,
+"5": 287,
+"6": 288 
+},
+"sin impossible 17": {
+ "1": 289,
+"2": 290,
+"3": 291,
+"4": 292,
+"5": 293,
+"6": 294 
+},
+"sin impossible 178": {
+ "1": 295,
+"2": 296,
+"3": 297,
+"4": 298,
+"5": 299,
+"6": 300 
+},
+"sin impossible 31": {
+ "1": 301,
+"2": 302,
+"3": 303,
+"4": 304,
+"5": 305,
+"6": 306 
+},
+"sin impossible 316": {
+ "1": 307,
+"2": 308,
+"3": 309,
+"4": 310,
+"5": 311,
+"6": 312 
+},
+"sin impossible 56": {
+ "1": 313,
+"2": 314,
+"3": 315,
+"4": 316,
+"5": 317,
+"6": 318 
+},
+"sin impossible 563": {
+ "1": 319,
+"2": 320,
+"3": 321,
+"4": 322,
+"5": 323,
+"6": 324 
+} 
+},
+"total": 324 
+},
+"geom14_text_pred": {
+ "geom": "text",
+"classed": "geom14_text_pred",
+"aes": {
+"x": "x",
+"y": "ifelse(Ensemble == \"ignoré\", ignoré.y.text, 0.98)",
+"hjust": "ifelse(Ensemble == \"ignoré\", 0.5, 0)",
+"key": "Ensemble",
+"label": "sprintf(\"N=%d données %s\", N, Ensemble)",
+"showSelected1": "tendence_difficulté_Nentraînement"
+},
+"params": {
+ "parse": false,
+"check_overlap": false,
+"na.rm": false,
+"na.rm": false,
+"colour": "#7F7F7F",
+"help": "Texte pour nombre d’échantillons dans chaque ensemble",
+"showSelected": "tendence_difficulté_Nentraînement",
+"help_showSelected": "tendence_difficulté_Nentraînement" 
+},
+"types": {
+"x": "numeric",
+"y": "numeric",
+"key": "character",
+"label": "character",
+"showSelected1": "character",
+"PANEL": "integer",
+"group": "character",
+"anchor": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+} 
+},
+"duration": {
+ "bloc.test":     1000,
+"tendence_difficulté_Nentraînement":     1000 
+},
+"selectors": {
+ "Algorithme": {
+ "type": "multiple",
+"legend": true,
+"is.variable.value": false,
+"showSelected": true,
+"selected": [ "arbre de décision", "sans caractères", "idéal" ],
+"levels": [ "arbre de décision", "sans caractères", "idéal" ],
+"update": [
+ "geom1_ribbon_overview",
+"geom2_line_overview",
+"geom3_point_overview",
+"geom8_segment_scatter",
+"geom10_point_details",
+"geom12_line_pred",
+"geom13_line_pred" 
+] 
+},
+"difference": {
+ "type": "multiple",
+"legend": true,
+"is.variable.value": false,
+"showSelected": true,
+"selected": [ "pas significative", "significative" ],
+"levels": [ "pas significative", "significative" ],
+"update": [
+ "geom3_point_overview" 
+] 
+},
+"tendence_difficulté_Nentraînement": {
+ "is.variable.value": false,
+"type": "single",
+"showSelected": true,
+"clickSelects": true,
+"chunks": [ "tendence_difficulté_Nentraînement_bloc.test", "tendence_difficulté_Nentraînement" ],
+"selected": "sin facile 1000",
+"levels": [ "constante facile 10", "constante facile 17", "constante facile 31", "constante facile 56", "constante facile 100", "constante facile 178", "constante facile 316", "constante facile 563", "constante facile 1000", "constante dificile 10", "constante dificile 17", "constante dificile 31", "constante dificile 56", "constante dificile 100", "constante dificile 178", "constante dificile 316", "constante dificile 563", "constante dificile 1000", "constante impossible 10", "constante impossible 17", "constante impossible 31", "constante impossible 56", "constante impossible 100", "constante impossible 178", "constante impossible 316", "constante impossible 563", "constante impossible 1000", "sin facile 10", "sin facile 17", "sin facile 31", "sin facile 56", "sin facile 100", "sin facile 178", "sin facile 316", "sin facile 563", "sin facile 1000", "sin dificile 10", "sin dificile 17", "sin dificile 31", "sin dificile 56", "sin dificile 100", "sin dificile 178", "sin dificile 316", "sin dificile 563", "sin dificile 1000", "sin impossible 10", "sin impossible 17", "sin impossible 31", "sin impossible 56", "sin impossible 100", "sin impossible 178", "sin impossible 316", "sin impossible 563", "sin impossible 1000" ],
+"update": [
+ "geom4_segment_overview",
+"geom5_text_overview",
+"geom6_rect_overview",
+"geom9_point_scatter",
+"geom10_point_details",
+"geom11_point_pred",
+"geom12_line_pred",
+"geom13_line_pred",
+"geom14_text_pred" 
+],
+"duration":     1000 
+},
+"bloc.test": {
+ "is.variable.value": false,
+"type": "single",
+"clickSelects": true,
+"showSelected": true,
+"chunks": "tendence_difficulté_Nentraînement_bloc.test",
+"selected": "1",
+"levels": [ "1", "2", "3", "4", "5", "6" ],
+"update": [
+ "geom9_point_scatter",
+"geom10_point_details",
+"geom11_point_pred",
+"geom13_line_pred" 
+],
+"duration":     1000 
+} 
+},
+"plots": {
+ "overview": {
+ "panel_margin_lines":     0.27,
+"legend": {
+ "difference": {
+ "guide": "legend",
+"geoms": "point",
+"title": "difference",
+"class": "difference",
+"selector": "difference",
+"is_discrete": true,
+"legend_type": "colour",
+"text_size": "9.6pt",
+"title_size": "12pt",
+"entries": [
+ {
+ "pointcolour": "transparent",
+"pointshape":       19,
+"pointsize":      1.5,
+"pointstroke":      0.5,
+"label": "pas significative",
+"pointfill": "#FFFFFF" 
+},
+{
+ "pointcolour": "#000000",
+"pointshape":       19,
+"pointsize":      1.5,
+"pointstroke":      0.5,
+"label": "significative",
+"pointfill": "#FFFFFF" 
+} 
+] 
+},
+"Algorithme": {
+ "guide": "legend",
+"geoms": [ "polygon", "point" ],
+"title": "Algorithme",
+"class": "Algorithme",
+"selector": "Algorithme",
+"is_discrete": true,
+"legend_type": [ "size", "fill" ],
+"text_size": "9.6pt",
+"title_size": "12pt",
+"entries": [
+ {
+ "polygonfill": "#FF0000",
+"polygonsize":      0.5,
+"polygonlinetype":        1,
+"polygonalpha":      0.5,
+"label": "arbre de décision",
+"pointsize":        2,
+"pointfill": "#FF0000",
+"pointshape":       19,
+"pointcolour": "#000000",
+"pointstroke":      0.5 
+},
+{
+ "polygonfill": "#00BFFF",
+"polygonsize":      0.5,
+"polygonlinetype":        1,
+"polygonalpha":      0.5,
+"label": "sans caractères",
+"pointsize":        4,
+"pointfill": "#00BFFF",
+"pointshape":       19,
+"pointcolour": "#000000",
+"pointstroke":      0.5 
+} 
+] 
+} 
+},
+"strips": {
+ "right": [
+ "",
+"",
+"constante",
+"",
+"",
+"sin" 
+],
+"top": [
+ "facile",
+"dificile",
+"impossible",
+"",
+"",
+"" 
+],
+"n": {
+ "top":        1,
+"right":        1 
+} 
+},
+"layout": {
+ "PANEL": [ "1", "2", "3", "4", "5", "6" ],
+"ROW": [ 1, 1, 1, 2, 2, 2 ],
+"COL": [ 1, 2, 3, 1, 2, 3 ],
+"tendence": [ "constante", "constante", "constante", "sin", "sin", "sin" ],
+"difficulté": [ "facile", "dificile", "impossible", "facile", "dificile", "impossible" ],
+"SCALE_X": [ 1, 1, 1, 1, 1, 1 ],
+"SCALE_Y": [ 1, 1, 1, 1, 1, 1 ],
+"AXIS_Y": [ true, false, false, true, false, false ],
+"AXIS_X": [ false, false, false, true, true, true ],
+"coord_fixed": [ false, false, false, false, false, false ],
+"width_proportion": [ 0.3333333, 0.3333333, 0.3333333, 0.3333333, 0.3333333, 0.3333333 ],
+"height_proportion": [      0.5,      0.5,      0.5,      0.5,      0.5,      0.5 ] 
+},
+"panel_background": {
+ "fill": "#FFFFFF",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": {
+ "fill": "transparent",
+"colour": "#7F7F7F",
+"size":      0.5,
+"linetype":        1 
+},
+"grid_major": {
+ "colour": "#E5E5E5",
+"size":      0.2,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        1,
+       2,
+       3 
+],
+[
+        1,
+       2,
+       3 
+],
+[
+        1,
+       2,
+       3 
+],
+[
+        1,
+       2,
+       3 
+],
+[
+        1,
+       2,
+       3 
+],
+[
+        1,
+       2,
+       3 
+] 
+],
+"y": [
+ [
+       -2,
+-1.69897,
+-1.39794 
+],
+[
+       -2,
+-1.69897,
+-1.39794 
+],
+[
+       -2,
+-1.69897,
+-1.39794 
+],
+[
+       -2,
+-1.69897,
+-1.39794 
+],
+[
+       -2,
+-1.69897,
+-1.39794 
+],
+[
+       -2,
+-1.69897,
+-1.39794 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FAFAFA",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        1,
+     1.5,
+       2,
+     2.5,
+       3 
+],
+[
+        1,
+     1.5,
+       2,
+     2.5,
+       3 
+],
+[
+        1,
+     1.5,
+       2,
+     2.5,
+       3 
+],
+[
+        1,
+     1.5,
+       2,
+     2.5,
+       3 
+],
+[
+        1,
+     1.5,
+       2,
+     2.5,
+       3 
+],
+[
+        1,
+     1.5,
+       2,
+     2.5,
+       3 
+] 
+],
+"y": [
+ [
+       -2,
+-1.849485,
+-1.69897,
+-1.548455,
+-1.39794 
+],
+[
+       -2,
+-1.849485,
+-1.69897,
+-1.548455,
+-1.39794 
+],
+[
+       -2,
+-1.849485,
+-1.69897,
+-1.548455,
+-1.39794 
+],
+[
+       -2,
+-1.849485,
+-1.69897,
+-1.548455,
+-1.39794 
+],
+[
+       -2,
+-1.849485,
+-1.69897,
+-1.548455,
+-1.39794 
+],
+[
+       -2,
+-1.849485,
+-1.69897,
+-1.548455,
+-1.39794 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+        1,
+       2,
+       3 
+],
+"xlab": [
+ "10",
+"100",
+"1000" 
+],
+"xrange": [ 0.7732531, 3.226747 ],
+"xline": false,
+"xticks": true,
+"y": [
+       -2,
+-1.69897,
+-1.39794 
+],
+"ylab": [
+ "0.01",
+"0.02",
+"0.04" 
+],
+"yrange": [ -2.034949, -1.266081 ],
+"yline": false,
+"yticks": true 
+},
+"axis2": {
+ "x": [
+        1,
+       2,
+       3 
+],
+"xlab": [
+ "10",
+"100",
+"1000" 
+],
+"xrange": [ 0.7732531, 3.226747 ],
+"xline": false,
+"xticks": true,
+"y": [
+       -2,
+-1.69897,
+-1.39794 
+],
+"ylab": [
+ "0.01",
+"0.02",
+"0.04" 
+],
+"yrange": [ -2.034949, -1.266081 ],
+"yline": false,
+"yticks": true 
+},
+"axis3": {
+ "x": [
+        1,
+       2,
+       3 
+],
+"xlab": [
+ "10",
+"100",
+"1000" 
+],
+"xrange": [ 0.7732531, 3.226747 ],
+"xline": false,
+"xticks": true,
+"y": [
+       -2,
+-1.69897,
+-1.39794 
+],
+"ylab": [
+ "0.01",
+"0.02",
+"0.04" 
+],
+"yrange": [ -2.034949, -1.266081 ],
+"yline": false,
+"yticks": true 
+},
+"axis4": {
+ "x": [
+        1,
+       2,
+       3 
+],
+"xlab": [
+ "10",
+"100",
+"1000" 
+],
+"xrange": [ 0.7732531, 3.226747 ],
+"xline": false,
+"xticks": true,
+"y": [
+       -2,
+-1.69897,
+-1.39794 
+],
+"ylab": [
+ "0.01",
+"0.02",
+"0.04" 
+],
+"yrange": [ -2.034949, -1.266081 ],
+"yline": false,
+"yticks": true 
+},
+"axis5": {
+ "x": [
+        1,
+       2,
+       3 
+],
+"xlab": [
+ "10",
+"100",
+"1000" 
+],
+"xrange": [ 0.7732531, 3.226747 ],
+"xline": false,
+"xticks": true,
+"y": [
+       -2,
+-1.69897,
+-1.39794 
+],
+"ylab": [
+ "0.01",
+"0.02",
+"0.04" 
+],
+"yrange": [ -2.034949, -1.266081 ],
+"yline": false,
+"yticks": true 
+},
+"axis6": {
+ "x": [
+        1,
+       2,
+       3 
+],
+"xlab": [
+ "10",
+"100",
+"1000" 
+],
+"xrange": [ 0.7732531, 3.226747 ],
+"xline": false,
+"xticks": true,
+"y": [
+       -2,
+-1.69897,
+-1.39794 
+],
+"ylab": [
+ "0.01",
+"0.02",
+"0.04" 
+],
+"yrange": [ -2.034949, -1.266081 ],
+"yline": false,
+"yticks": true 
+},
+"xtitle": "Nentraînement = Nombre d’échantillons d’entraînement",
+"strip_text_xsize": "12pt",
+"xsize": "12pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "Erreur carrée moyenne",
+"strip_text_ysize": "12pt",
+"ysize": "12pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "10",
+"100",
+"1000" 
+],
+"ylabs": [
+ "0.01",
+"0.02",
+"0.04" 
+],
+"title": "Choisir tendence, difficulté, Nentraînement",
+"title_size": "14.4pt",
+"options": {
+ "width":      600,
+"height":      300 
+},
+"span": {
+ "rowspan": null,
+"colspan": null,
+"last_in_row": null 
+},
+"geoms": [
+ "geom1_ribbon_overview",
+"geom2_line_overview",
+"geom3_point_overview",
+"geom4_segment_overview",
+"geom5_text_overview",
+"geom6_rect_overview" 
+] 
+},
+"scatter": {
+ "panel_margin_lines":     0.27,
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ true ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#FFFFFF",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": {
+ "fill": "transparent",
+"colour": "#7F7F7F",
+"size":      0.5,
+"linetype":        1 
+},
+"grid_major": {
+ "colour": "#E5E5E5",
+"size":      0.2,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+       -2,
+-1.69897,
+-1.39794 
+] 
+],
+"y": [
+ [
+       -2,
+-1.69897,
+-1.39794 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FAFAFA",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+       -2,
+-1.849485,
+-1.69897,
+-1.548455,
+-1.39794 
+] 
+],
+"y": [
+ [
+       -2,
+-1.849485,
+-1.69897,
+-1.548455,
+-1.39794 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+       -2,
+-1.69897,
+-1.39794 
+],
+"xlab": [
+ "0.01",
+"0.02",
+"0.04" 
+],
+"xrange": [ -2.034949, -1.266081 ],
+"xline": false,
+"xticks": true,
+"y": [
+       -2,
+-1.69897,
+-1.39794 
+],
+"ylab": [
+ "0.01",
+"0.02",
+"0.04" 
+],
+"yrange": [ -2.034949, -1.266081 ],
+"yline": false,
+"yticks": true 
+},
+"xtitle": "sans caractères",
+"strip_text_xsize": "12pt",
+"xsize": "12pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "arbre de décision",
+"strip_text_ysize": "12pt",
+"ysize": "12pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "0.01",
+"0.02",
+"0.04" 
+],
+"ylabs": [
+ "0.01",
+"0.02",
+"0.04" 
+],
+"title": "Erreur carrée pour la séléction",
+"title_size": "14.4pt",
+"options": {
+ "width":      300,
+"height":      300 
+},
+"span": {
+ "rowspan": null,
+"colspan": null,
+"last_in_row": true 
+},
+"geoms": [
+ "geom7_abline_scatter",
+"geom8_segment_scatter",
+"geom9_point_scatter" 
+] 
+},
+"details": {
+ "panel_margin_lines":     0.27,
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#FFFFFF",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": {
+ "fill": "transparent",
+"colour": "#7F7F7F",
+"size":      0.5,
+"linetype":        1 
+},
+"grid_major": {
+ "colour": "#E5E5E5",
+"size":      0.2,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+       -2,
+-1.69897,
+-1.39794 
+] 
+],
+"y": [
+ [
+ 1,
+2 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FAFAFA",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+       -2,
+-1.849485,
+-1.69897,
+-1.548455,
+-1.39794 
+] 
+],
+"y": [
+ [] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+       -2,
+-1.69897,
+-1.39794 
+],
+"xlab": [
+ "0.01",
+"0.02",
+"0.04" 
+],
+"xrange": [ -2.034949, -1.266081 ],
+"xline": false,
+"xticks": true,
+"y": [
+ 1,
+2 
+],
+"ylab": [
+ "arbre de décision",
+"sans caractères" 
+],
+"yrange": [      0.4,      2.6 ],
+"yline": false,
+"yticks": true 
+},
+"xtitle": "Erreur carrée moyenne",
+"strip_text_xsize": "12pt",
+"xsize": "12pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "Algo",
+"strip_text_ysize": "12pt",
+"ysize": "12pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "0.01",
+"0.02",
+"0.04" 
+],
+"ylabs": [
+ "arbre de décision",
+"sans caractères" 
+],
+"title": "Erreur pour la sélection",
+"title_size": "14.4pt",
+"options": {
+ "width":     1000,
+"height":      150 
+},
+"span": {
+ "rowspan": null,
+"colspan":        2,
+"last_in_row": true 
+},
+"geoms": [
+ "geom10_point_details" 
+] 
+},
+"pred": {
+ "panel_margin_lines":     0.27,
+"legend": {
+ "Algorithme": {
+ "guide": "legend",
+"geoms": [ "path", "path" ],
+"title": "Algorithme",
+"class": "Algorithme",
+"selector": "Algorithme",
+"is_discrete": true,
+"legend_type": [ "size", "colour" ],
+"text_size": "9.6pt",
+"title_size": "12pt",
+"entries": [
+ {
+ "pathcolour": "#FF0000",
+"pathsize":        2,
+"pathlinetype":        1,
+"label": "arbre de décision" 
+},
+{
+ "pathcolour": "#000000",
+"pathsize":        1,
+"pathlinetype":        1,
+"label": "idéal" 
+},
+{
+ "pathcolour": "#00BFFF",
+"pathsize":        4,
+"pathlinetype":        1,
+"label": "sans caractères" 
+} 
+] 
+} 
+},
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#FFFFFF",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": {
+ "fill": "transparent",
+"colour": "#7F7F7F",
+"size":      0.5,
+"linetype":        1 
+},
+"grid_major": {
+ "colour": "#E5E5E5",
+"size":      0.2,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        0,
+     0.5,
+       1,
+     1.2,
+     1.7,
+     2.2 
+] 
+],
+"y": [
+ [
+        0,
+    0.25,
+     0.5,
+    0.75,
+       1 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FAFAFA",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        0,
+    0.25,
+     0.5,
+    0.75,
+       1,
+     1.1,
+     1.2,
+    1.45,
+     1.7,
+    1.95,
+     2.2 
+] 
+],
+"y": [
+ [
+        0,
+   0.125,
+    0.25,
+   0.375,
+     0.5,
+   0.625,
+    0.75,
+   0.875,
+       1 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+        0,
+     0.5,
+       1,
+     1.2,
+     1.7,
+     2.2 
+],
+"xlab": [
+        0,
+     0.5,
+       1,
+       0,
+     0.5,
+       1 
+],
+"xrange": [    -0.11,     2.31 ],
+"xline": false,
+"xticks": true,
+"y": [
+        0,
+    0.25,
+     0.5,
+    0.75,
+       1 
+],
+"ylab": [
+ "0.00",
+"0.25",
+"0.50",
+"0.75",
+"1.00" 
+],
+"yrange": [    -0.05,     1.05 ],
+"yline": false,
+"yticks": true 
+},
+"xtitle": "x = entrée",
+"strip_text_xsize": "12pt",
+"xsize": "12pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "y = sortie",
+"strip_text_ysize": "12pt",
+"ysize": "12pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+        0,
+     0.5,
+       1 
+],
+"ylabs": [
+ "0.00",
+"0.25",
+"0.50",
+"0.75",
+"1.00" 
+],
+"title": "Prédictions pour la division choisie",
+"title_size": "14.4pt",
+"options": {
+ "width":      900,
+"height":      300 
+},
+"span": {
+ "rowspan": null,
+"colspan":        2,
+"last_in_row": null 
+},
+"geoms": [
+ "geom11_point_pred",
+"geom12_line_pred",
+"geom13_line_pred",
+"geom14_text_pred" 
+] 
+} 
+},
+"source": "https://github.com/tdhock/2026-08-apprentissage/blob/main/cv-noise-samples.R",
+"title": "Échantillons pour apprendre une fonction de régression" 
+}

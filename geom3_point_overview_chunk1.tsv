@@ -1,0 +1,109 @@
+size	fill	colour	y	x	showSelected1	showSelected2	PANEL
+2	#FF0000	transparent	-1.55692240967842	1	pas significative	arbre de décision	1
+4	#00BFFF	transparent	-1.55692240967842	1	pas significative	sans caractères	1
+2	#FF0000	transparent	-1.6233874313891	1.23044892137827	pas significative	arbre de décision	1
+4	#00BFFF	transparent	-1.6233874313891	1.23044892137827	pas significative	sans caractères	1
+2	#FF0000	transparent	-1.57237936701621	1.49136169383427	pas significative	arbre de décision	1
+4	#00BFFF	transparent	-1.63371300269874	1.49136169383427	pas significative	sans caractères	1
+2	#FF0000	#000000	-1.58243280464365	1.7481880270062	significative	arbre de décision	1
+4	#00BFFF	#000000	-1.63887423639278	1.7481880270062	significative	sans caractères	1
+2	#FF0000	#000000	-1.56765967002862	2	significative	arbre de décision	1
+4	#00BFFF	#000000	-1.63956768465501	2	significative	sans caractères	1
+2	#FF0000	#000000	-1.58821841487844	2.25042000230889	significative	arbre de décision	1
+4	#00BFFF	#000000	-1.64028705301009	2.25042000230889	significative	sans caractères	1
+2	#FF0000	#000000	-1.60515492704675	2.4996870826184	significative	arbre de décision	1
+4	#00BFFF	#000000	-1.64178468034878	2.4996870826184	significative	sans caractères	1
+2	#FF0000	transparent	-1.63329097754279	2.75050839485135	pas significative	arbre de décision	1
+4	#00BFFF	transparent	-1.64292329552025	2.75050839485135	pas significative	sans caractères	1
+2	#FF0000	transparent	-1.64253787982858	3	pas significative	arbre de décision	1
+4	#00BFFF	transparent	-1.64253787982858	3	pas significative	sans caractères	1
+2	#FF0000	transparent	-1.46412978966229	1	pas significative	arbre de décision	2
+4	#00BFFF	transparent	-1.46412978966229	1	pas significative	sans caractères	2
+2	#FF0000	transparent	-1.46343770989672	1.23044892137827	pas significative	arbre de décision	2
+4	#00BFFF	transparent	-1.46343770989672	1.23044892137827	pas significative	sans caractères	2
+2	#FF0000	#000000	-1.42050662805592	1.49136169383427	significative	arbre de décision	2
+4	#00BFFF	#000000	-1.47799099087762	1.49136169383427	significative	sans caractères	2
+2	#FF0000	#000000	-1.42099202341278	1.7481880270062	significative	arbre de décision	2
+4	#00BFFF	#000000	-1.47790432257339	1.7481880270062	significative	sans caractères	2
+2	#FF0000	#000000	-1.40361588050213	2	significative	arbre de décision	2
+4	#00BFFF	#000000	-1.47839692814507	2	significative	sans caractères	2
+2	#FF0000	#000000	-1.39605122864177	2.25042000230889	significative	arbre de décision	2
+4	#00BFFF	#000000	-1.47706222714843	2.25042000230889	significative	sans caractères	2
+2	#FF0000	#000000	-1.44292836158898	2.4996870826184	significative	arbre de décision	2
+4	#00BFFF	#000000	-1.47465175653589	2.4996870826184	significative	sans caractères	2
+2	#FF0000	transparent	-1.46325627467528	2.75050839485135	pas significative	arbre de décision	2
+4	#00BFFF	transparent	-1.47532124061001	2.75050839485135	pas significative	sans caractères	2
+2	#FF0000	transparent	-1.47399381689493	3	pas significative	arbre de décision	2
+4	#00BFFF	transparent	-1.47697952648705	3	pas significative	sans caractères	2
+2	#FF0000	transparent	-1.64992783396691	1	pas significative	arbre de décision	3
+4	#00BFFF	transparent	-1.64992783396691	1	pas significative	sans caractères	3
+2	#FF0000	transparent	-1.71968146441137	1.23044892137827	pas significative	arbre de décision	3
+4	#00BFFF	transparent	-1.71968146441137	1.23044892137827	pas significative	sans caractères	3
+2	#FF0000	#000000	-1.71821886953155	1.49136169383427	significative	arbre de décision	3
+4	#00BFFF	#000000	-1.74297294717238	1.49136169383427	significative	sans caractères	3
+2	#FF0000	#000000	-1.71214663690931	1.7481880270062	significative	arbre de décision	3
+4	#00BFFF	#000000	-1.75054638651821	1.7481880270062	significative	sans caractères	3
+2	#FF0000	#000000	-1.68506864390564	2	significative	arbre de décision	3
+4	#00BFFF	#000000	-1.75020193936524	2	significative	sans caractères	3
+2	#FF0000	#000000	-1.6844721940671	2.25042000230889	significative	arbre de décision	3
+4	#00BFFF	#000000	-1.74840093130078	2.25042000230889	significative	sans caractères	3
+2	#FF0000	#000000	-1.69390875591468	2.4996870826184	significative	arbre de décision	3
+4	#00BFFF	#000000	-1.74651701001638	2.4996870826184	significative	sans caractères	3
+2	#FF0000	transparent	-1.73882709828426	2.75050839485135	pas significative	arbre de décision	3
+4	#00BFFF	transparent	-1.74760498376391	2.75050839485135	pas significative	sans caractères	3
+2	#FF0000	transparent	-1.74875744976463	3	pas significative	arbre de décision	3
+4	#00BFFF	transparent	-1.74875744976463	3	pas significative	sans caractères	3
+2	#FF0000	transparent	-1.3702977900873	1	pas significative	arbre de décision	4
+4	#00BFFF	transparent	-1.3702977900873	1	pas significative	sans caractères	4
+2	#FF0000	transparent	-1.40691989380339	1.23044892137827	pas significative	arbre de décision	4
+4	#00BFFF	transparent	-1.40691989380339	1.23044892137827	pas significative	sans caractères	4
+2	#FF0000	transparent	-1.40209147781605	1.49136169383427	pas significative	arbre de décision	4
+4	#00BFFF	transparent	-1.41667247031255	1.49136169383427	pas significative	sans caractères	4
+2	#FF0000	#000000	-1.56630882610419	1.7481880270062	significative	arbre de décision	4
+4	#00BFFF	#000000	-1.41870859657575	1.7481880270062	significative	sans caractères	4
+2	#FF0000	#000000	-1.79813569378486	2	significative	arbre de décision	4
+4	#00BFFF	#000000	-1.42022718263609	2	significative	sans caractères	4
+2	#FF0000	#000000	-1.85813952552137	2.25042000230889	significative	arbre de décision	4
+4	#00BFFF	#000000	-1.42028336715435	2.25042000230889	significative	sans caractères	4
+2	#FF0000	#000000	-1.88856322598205	2.4996870826184	significative	arbre de décision	4
+4	#00BFFF	#000000	-1.42333305583343	2.4996870826184	significative	sans caractères	4
+2	#FF0000	#000000	-1.91147797005648	2.75050839485135	significative	arbre de décision	4
+4	#00BFFF	#000000	-1.42258210693697	2.75050839485135	significative	sans caractères	4
+2	#FF0000	#000000	-1.93471753931736	3	significative	arbre de décision	4
+4	#00BFFF	#000000	-1.42250167992848	3	significative	sans caractères	4
+2	#FF0000	transparent	-1.61371937303762	1	pas significative	arbre de décision	5
+4	#00BFFF	transparent	-1.61371937303762	1	pas significative	sans caractères	5
+2	#FF0000	transparent	-1.65557289369396	1.23044892137827	pas significative	arbre de décision	5
+4	#00BFFF	transparent	-1.65557289369396	1.23044892137827	pas significative	sans caractères	5
+2	#FF0000	transparent	-1.64942843625593	1.49136169383427	pas significative	arbre de décision	5
+4	#00BFFF	transparent	-1.65624909599102	1.49136169383427	pas significative	sans caractères	5
+2	#FF0000	transparent	-1.67671766243832	1.7481880270062	pas significative	arbre de décision	5
+4	#00BFFF	transparent	-1.65718743683475	1.7481880270062	pas significative	sans caractères	5
+2	#FF0000	#000000	-1.71426062640477	2	significative	arbre de décision	5
+4	#00BFFF	#000000	-1.65821117681252	2	significative	sans caractères	5
+2	#FF0000	#000000	-1.74307071983747	2.25042000230889	significative	arbre de décision	5
+4	#00BFFF	#000000	-1.65960621488109	2.25042000230889	significative	sans caractères	5
+2	#FF0000	#000000	-1.76210715587278	2.4996870826184	significative	arbre de décision	5
+4	#00BFFF	#000000	-1.66230452770219	2.4996870826184	significative	sans caractères	5
+2	#FF0000	#000000	-1.76981434648962	2.75050839485135	significative	arbre de décision	5
+4	#00BFFF	#000000	-1.66314598670487	2.75050839485135	significative	sans caractères	5
+2	#FF0000	#000000	-1.78674061585553	3	significative	arbre de décision	5
+4	#00BFFF	#000000	-1.66241849810324	3	significative	sans caractères	5
+2	#FF0000	transparent	-1.61394157329836	1	pas significative	arbre de décision	6
+4	#00BFFF	transparent	-1.61394157329836	1	pas significative	sans caractères	6
+2	#FF0000	transparent	-1.61713393739364	1.23044892137827	pas significative	arbre de décision	6
+4	#00BFFF	transparent	-1.61713393739364	1.23044892137827	pas significative	sans caractères	6
+2	#FF0000	transparent	-1.56834442107942	1.49136169383427	pas significative	arbre de décision	6
+4	#00BFFF	transparent	-1.61686237954215	1.49136169383427	pas significative	sans caractères	6
+2	#FF0000	#000000	-1.57354555384931	1.7481880270062	significative	arbre de décision	6
+4	#00BFFF	#000000	-1.62241166632432	1.7481880270062	significative	sans caractères	6
+2	#FF0000	#000000	-1.56689270300466	2	significative	arbre de décision	6
+4	#00BFFF	#000000	-1.62324057943949	2	significative	sans caractères	6
+2	#FF0000	#000000	-1.55696116865282	2.25042000230889	significative	arbre de décision	6
+4	#00BFFF	#000000	-1.6192297329383	2.25042000230889	significative	sans caractères	6
+2	#FF0000	#000000	-1.57739628242064	2.4996870826184	significative	arbre de décision	6
+4	#00BFFF	#000000	-1.62266288242446	2.4996870826184	significative	sans caractères	6
+2	#FF0000	transparent	-1.61580555140239	2.75050839485135	pas significative	arbre de décision	6
+4	#00BFFF	transparent	-1.62677739701632	2.75050839485135	pas significative	sans caractères	6
+2	#FF0000	transparent	-1.62505131522318	3	pas significative	arbre de décision	6
+4	#00BFFF	transparent	-1.6277972816346	3	pas significative	sans caractères	6
