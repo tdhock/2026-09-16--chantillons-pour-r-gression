@@ -41,7 +41,13 @@
 "PANEL" 
 ],
 "chunks": 1,
-"total": 1 
+"total": 1,
+"chunk_info": {
+ "geom1_ribbon_overview_chunk1.tsv": {
+ "bytes":     9668,
+"rows": 106 
+} 
+} 
 },
 "geom2_line_overview": {
  "geom": "line",
@@ -78,7 +84,13 @@
 "PANEL" 
 ],
 "chunks": 1,
-"total": 1 
+"total": 1,
+"chunk_info": {
+ "geom2_line_overview_chunk1.tsv": {
+ "bytes":     5615,
+"rows": 108 
+} 
+} 
 },
 "geom3_point_overview": {
  "geom": "point",
@@ -122,7 +134,13 @@
 "PANEL" 
 ],
 "chunks": 1,
-"total": 1 
+"total": 1,
+"chunk_info": {
+ "geom3_point_overview_chunk1.tsv": {
+ "bytes":     9280,
+"rows": 108 
+} 
+} 
 },
 "geom4_segment_overview": {
  "geom": "segment",
@@ -133,7 +151,7 @@
 "key": "1",
 "xend": "Nentraînement",
 "yend": "10^mean.featureless",
-"showSelected1": "tendence_difficulté_Nentraînement"
+"showSelected1": "tendance_difficulté_Nentraînement"
 },
 "params": {
  "lineend": "butt",
@@ -141,9 +159,9 @@
 "na.rm": false,
 "size":        3,
 "alpha":      0.5,
-"showSelected": "tendence_difficulté_Nentraînement",
+"showSelected": "tendance_difficulté_Nentraînement",
 "help": "Segment gris pour la différence entre rpart et sans caractères",
-"help_showSelected": "tendence_difficulté_Nentraînement" 
+"help_showSelected": "tendance_difficulté_Nentraînement" 
 },
 "types": {
 "y": "numeric",
@@ -165,7 +183,13 @@
 "PANEL" 
 ],
 "chunks": 1,
-"total": 1 
+"total": 1,
+"chunk_info": {
+ "geom4_segment_overview_chunk1.tsv": {
+ "bytes":     4526,
+"rows": 54 
+} 
+} 
 },
 "geom5_text_overview": {
  "geom": "text",
@@ -176,16 +200,16 @@
 "key": "1",
 "hjust": "ifelse(Nentraînement < mid.x, 0, 1)",
 "label": "fcase(p.value < 1e-04, \"p<0.0001\", is.nan(p.value), \"Diff=0\", default = sprintf(\"p=%.4f\", p.value))",
-"showSelected1": "tendence_difficulté_Nentraînement"
+"showSelected1": "tendance_difficulté_Nentraînement"
 },
 "params": {
  "parse": false,
 "check_overlap": false,
 "na.rm": false,
 "na.rm": false,
-"showSelected": "tendence_difficulté_Nentraînement",
+"showSelected": "tendance_difficulté_Nentraînement",
 "help": "Probabilité critique dans un test de Student, différence entre rpart et sans caractères",
-"help_showSelected": "tendence_difficulté_Nentraînement" 
+"help_showSelected": "tendance_difficulté_Nentraînement" 
 },
 "types": {
 "y": "numeric",
@@ -207,7 +231,13 @@
 "PANEL" 
 ],
 "chunks": 1,
-"total": 1 
+"total": 1,
+"chunk_info": {
+ "geom5_text_overview_chunk1.tsv": {
+ "bytes":     3667,
+"rows": 54 
+} 
+} 
 },
 "geom6_rect_overview": {
  "geom": "rect",
@@ -217,7 +247,7 @@
 "xmax": "xmax",
 "ymin": "0",
 "ymax": "Inf",
-"clickSelects": "tendence_difficulté_Nentraînement"
+"clickSelects": "tendance_difficulté_Nentraînement"
 },
 "params": {
  "na.rm": false,
@@ -225,9 +255,9 @@
 "alpha":      0.1,
 "fill": "#000000",
 "colour": "transparent",
-"help": "Rectangle gris pour la sélection de tendence, difficulté, nombre d’échantillons d’entraînement",
-"clickSelects": "tendence_difficulté_Nentraînement",
-"help_clickSelects": "tendence_difficulté_Nentraînement" 
+"help": "Rectangle gris pour la sélection de tendance, difficulté, nombre d’échantillons d’entraînement",
+"clickSelects": "tendance_difficulté_Nentraînement",
+"help_clickSelects": "tendance_difficulté_Nentraînement" 
 },
 "types": {
 "ymin": "numeric",
@@ -246,7 +276,13 @@
  "PANEL" 
 ],
 "chunks": 1,
-"total": 1 
+"total": 1,
+"chunk_info": {
+ "geom6_rect_overview_chunk1.tsv": {
+ "bytes":     4941,
+"rows": 54 
+} 
+} 
 },
 "geom7_abline_scatter": {
  "geom": "segment",
@@ -276,7 +312,13 @@
 "nest_order": [],
 "subset_order": [],
 "chunks": 1,
-"total": 1 
+"total": 1,
+"chunk_info": {
+ "geom7_abline_scatter_chunk1.tsv": {
+ "bytes":       20,
+"rows": 1 
+} 
+} 
 },
 "geom8_segment_scatter": {
  "geom": "segment",
@@ -317,7 +359,13 @@
  "showSelected1" 
 ],
 "chunks": 1,
-"total": 1 
+"total": 1,
+"chunk_info": {
+ "geom8_segment_scatter_chunk1.tsv": {
+ "bytes":      225,
+"rows": 2 
+} 
+} 
 },
 "geom9_point_scatter": {
  "geom": "point",
@@ -328,17 +376,17 @@
 "key": "bloc.test",
 "tooltip": "sprintf(\"fold %d featureless=%.3f rpart=%.3f\", bloc.test, featureless, rpart)",
 "clickSelects": "bloc.test",
-"showSelected1": "tendence_difficulté_Nentraînement"
+"showSelected1": "tendance_difficulté_Nentraînement"
 },
 "params": {
  "na.rm": false,
 "na.rm": false,
 "size":        5,
 "alpha":      0.7,
-"showSelected": "tendence_difficulté_Nentraînement",
+"showSelected": "tendance_difficulté_Nentraînement",
 "help": "Un cercle pour chaque bloc dans la validation croisée",
 "clickSelects": "bloc.test",
-"help_showSelected": "tendence_difficulté_Nentraînement",
+"help_showSelected": "tendance_difficulté_Nentraînement",
 "help_clickSelects": "bloc.test" 
 },
 "types": {
@@ -359,7 +407,13 @@
  "showSelected1" 
 ],
 "chunks": 1,
-"total": 1 
+"total": 1,
+"chunk_info": {
+ "geom9_point_scatter_chunk1.tsv": {
+ "bytes":    31936,
+"rows": 324 
+} 
+} 
 },
 "geom10_point_details": {
  "geom": "point",
@@ -372,17 +426,17 @@
 "tooltip": "sprintf(\"%s bloc %d MSE=%.3f\", Algorithme, bloc.test, regr.mse)",
 "clickSelects": "bloc.test",
 "showSelected1": "Algorithme",
-"showSelected2": "tendence_difficulté_Nentraînement"
+"showSelected2": "tendance_difficulté_Nentraînement"
 },
 "params": {
  "na.rm": false,
 "na.rm": false,
 "alpha":      0.7,
 "size":        5,
-"showSelected": [ "Algorithme", "tendence_difficulté_Nentraînement" ],
+"showSelected": [ "Algorithme", "tendance_difficulté_Nentraînement" ],
 "help": "Un cercle pour chaque division et Algorithmee",
 "clickSelects": "bloc.test",
-"help_showSelected": [ "Algorithme", "tendence_difficulté_Nentraînement" ],
+"help_showSelected": [ "Algorithme", "tendance_difficulté_Nentraînement" ],
 "help_clickSelects": "bloc.test" 
 },
 "types": {
@@ -408,7 +462,13 @@
 "showSelected2" 
 ],
 "chunks": 1,
-"total": 1 
+"total": 1,
+"chunk_info": {
+ "geom10_point_details_chunk1.tsv": {
+ "bytes":    87426,
+"rows": 645 
+} 
+} 
 },
 "geom11_point_pred": {
  "geom": "point",
@@ -417,7 +477,7 @@
 "x": "x",
 "y": "y",
 "key": "row_id",
-"showSelected1": "tendence_difficulté_Nentraînement",
+"showSelected1": "tendance_difficulté_Nentraînement",
 "showSelected2": "bloc.test"
 },
 "params": {
@@ -426,9 +486,9 @@
 "size":        3,
 "fill": "#FFFFFF",
 "colour": "#7F7F7F",
-"showSelected": [ "tendence_difficulté_Nentraînement", "bloc.test" ],
+"showSelected": [ "tendance_difficulté_Nentraînement", "bloc.test" ],
 "help": "Un cercle pour chaque échantillon test (gauche) et entraînement (droite).",
-"help_showSelected": [ "tendence_difficulté_Nentraînement", "bloc.test" ] 
+"help_showSelected": [ "tendance_difficulté_Nentraînement", "bloc.test" ] 
 },
 "types": {
 "x": "numeric",
@@ -440,7 +500,7 @@
 "group": "character"
 },
 "chunk_order": [
- "tendence_difficulté_Nentraînement",
+ "tendance_difficulté_Nentraînement",
 "bloc.test" 
 ],
 "nest_order": [],
@@ -885,7 +945,1309 @@
 "6": 324 
 } 
 },
-"total": 324 
+"total": 324,
+"chunk_info": {
+ "geom11_point_pred_chunk_common.tsv": {
+ "bytes":     7303,
+"rows": 1200 
+},
+"geom11_point_pred_chunk1.tsv": {
+ "bytes":    17860,
+"rows": 1200 
+},
+"geom11_point_pred_chunk2.tsv": {
+ "bytes":    17854,
+"rows": 1200 
+},
+"geom11_point_pred_chunk3.tsv": {
+ "bytes":    17836,
+"rows": 1200 
+},
+"geom11_point_pred_chunk4.tsv": {
+ "bytes":    17876,
+"rows": 1200 
+},
+"geom11_point_pred_chunk5.tsv": {
+ "bytes":    17869,
+"rows": 1200 
+},
+"geom11_point_pred_chunk6.tsv": {
+ "bytes":    17876,
+"rows": 1200 
+},
+"geom11_point_pred_chunk7.tsv": {
+ "bytes":    20276,
+"rows": 1200 
+},
+"geom11_point_pred_chunk8.tsv": {
+ "bytes":    20262,
+"rows": 1200 
+},
+"geom11_point_pred_chunk9.tsv": {
+ "bytes":    20259,
+"rows": 1200 
+},
+"geom11_point_pred_chunk10.tsv": {
+ "bytes":    20294,
+"rows": 1200 
+},
+"geom11_point_pred_chunk11.tsv": {
+ "bytes":    20284,
+"rows": 1200 
+},
+"geom11_point_pred_chunk12.tsv": {
+ "bytes":    20272,
+"rows": 1200 
+},
+"geom11_point_pred_chunk13.tsv": {
+ "bytes":    44380,
+"rows": 1200 
+},
+"geom11_point_pred_chunk14.tsv": {
+ "bytes":    44382,
+"rows": 1200 
+},
+"geom11_point_pred_chunk15.tsv": {
+ "bytes":    44387,
+"rows": 1200 
+},
+"geom11_point_pred_chunk16.tsv": {
+ "bytes":    44396,
+"rows": 1200 
+},
+"geom11_point_pred_chunk17.tsv": {
+ "bytes":    44391,
+"rows": 1200 
+},
+"geom11_point_pred_chunk18.tsv": {
+ "bytes":    44385,
+"rows": 1200 
+},
+"geom11_point_pred_chunk19.tsv": {
+ "bytes":    18048,
+"rows": 1200 
+},
+"geom11_point_pred_chunk20.tsv": {
+ "bytes":    18042,
+"rows": 1200 
+},
+"geom11_point_pred_chunk21.tsv": {
+ "bytes":    18024,
+"rows": 1200 
+},
+"geom11_point_pred_chunk22.tsv": {
+ "bytes":    18064,
+"rows": 1200 
+},
+"geom11_point_pred_chunk23.tsv": {
+ "bytes":    18056,
+"rows": 1200 
+},
+"geom11_point_pred_chunk24.tsv": {
+ "bytes":    18064,
+"rows": 1200 
+},
+"geom11_point_pred_chunk25.tsv": {
+ "bytes":    22359,
+"rows": 1200 
+},
+"geom11_point_pred_chunk26.tsv": {
+ "bytes":    22354,
+"rows": 1200 
+},
+"geom11_point_pred_chunk27.tsv": {
+ "bytes":    22347,
+"rows": 1200 
+},
+"geom11_point_pred_chunk28.tsv": {
+ "bytes":    22381,
+"rows": 1200 
+},
+"geom11_point_pred_chunk29.tsv": {
+ "bytes":    22376,
+"rows": 1200 
+},
+"geom11_point_pred_chunk30.tsv": {
+ "bytes":    22352,
+"rows": 1200 
+},
+"geom11_point_pred_chunk31.tsv": {
+ "bytes":    18425,
+"rows": 1200 
+},
+"geom11_point_pred_chunk32.tsv": {
+ "bytes":    18419,
+"rows": 1200 
+},
+"geom11_point_pred_chunk33.tsv": {
+ "bytes":    18400,
+"rows": 1200 
+},
+"geom11_point_pred_chunk34.tsv": {
+ "bytes":    18436,
+"rows": 1200 
+},
+"geom11_point_pred_chunk35.tsv": {
+ "bytes":    18432,
+"rows": 1200 
+},
+"geom11_point_pred_chunk36.tsv": {
+ "bytes":    18442,
+"rows": 1200 
+},
+"geom11_point_pred_chunk37.tsv": {
+ "bytes":    26054,
+"rows": 1200 
+},
+"geom11_point_pred_chunk38.tsv": {
+ "bytes":    26035,
+"rows": 1200 
+},
+"geom11_point_pred_chunk39.tsv": {
+ "bytes":    26045,
+"rows": 1200 
+},
+"geom11_point_pred_chunk40.tsv": {
+ "bytes":    26082,
+"rows": 1200 
+},
+"geom11_point_pred_chunk41.tsv": {
+ "bytes":    26082,
+"rows": 1200 
+},
+"geom11_point_pred_chunk42.tsv": {
+ "bytes":    26054,
+"rows": 1200 
+},
+"geom11_point_pred_chunk43.tsv": {
+ "bytes":    19097,
+"rows": 1200 
+},
+"geom11_point_pred_chunk44.tsv": {
+ "bytes":    19082,
+"rows": 1200 
+},
+"geom11_point_pred_chunk45.tsv": {
+ "bytes":    19069,
+"rows": 1200 
+},
+"geom11_point_pred_chunk46.tsv": {
+ "bytes":    19109,
+"rows": 1200 
+},
+"geom11_point_pred_chunk47.tsv": {
+ "bytes":    19105,
+"rows": 1200 
+},
+"geom11_point_pred_chunk48.tsv": {
+ "bytes":    19109,
+"rows": 1200 
+},
+"geom11_point_pred_chunk49.tsv": {
+ "bytes":    32646,
+"rows": 1200 
+},
+"geom11_point_pred_chunk50.tsv": {
+ "bytes":    32639,
+"rows": 1200 
+},
+"geom11_point_pred_chunk51.tsv": {
+ "bytes":    32666,
+"rows": 1200 
+},
+"geom11_point_pred_chunk52.tsv": {
+ "bytes":    32707,
+"rows": 1200 
+},
+"geom11_point_pred_chunk53.tsv": {
+ "bytes":    32703,
+"rows": 1200 
+},
+"geom11_point_pred_chunk54.tsv": {
+ "bytes":    32679,
+"rows": 1200 
+},
+"geom11_point_pred_chunk55.tsv": {
+ "bytes":    17843,
+"rows": 1200 
+},
+"geom11_point_pred_chunk56.tsv": {
+ "bytes":    17865,
+"rows": 1200 
+},
+"geom11_point_pred_chunk57.tsv": {
+ "bytes":    17855,
+"rows": 1200 
+},
+"geom11_point_pred_chunk58.tsv": {
+ "bytes":    17852,
+"rows": 1200 
+},
+"geom11_point_pred_chunk59.tsv": {
+ "bytes":    17858,
+"rows": 1200 
+},
+"geom11_point_pred_chunk60.tsv": {
+ "bytes":    17854,
+"rows": 1200 
+},
+"geom11_point_pred_chunk61.tsv": {
+ "bytes":    20255,
+"rows": 1200 
+},
+"geom11_point_pred_chunk62.tsv": {
+ "bytes":    20275,
+"rows": 1200 
+},
+"geom11_point_pred_chunk63.tsv": {
+ "bytes":    20271,
+"rows": 1200 
+},
+"geom11_point_pred_chunk64.tsv": {
+ "bytes":    20263,
+"rows": 1200 
+},
+"geom11_point_pred_chunk65.tsv": {
+ "bytes":    20256,
+"rows": 1200 
+},
+"geom11_point_pred_chunk66.tsv": {
+ "bytes":    20262,
+"rows": 1200 
+},
+"geom11_point_pred_chunk67.tsv": {
+ "bytes":    44341,
+"rows": 1200 
+},
+"geom11_point_pred_chunk68.tsv": {
+ "bytes":    44343,
+"rows": 1200 
+},
+"geom11_point_pred_chunk69.tsv": {
+ "bytes":    44348,
+"rows": 1200 
+},
+"geom11_point_pred_chunk70.tsv": {
+ "bytes":    44357,
+"rows": 1200 
+},
+"geom11_point_pred_chunk71.tsv": {
+ "bytes":    44352,
+"rows": 1200 
+},
+"geom11_point_pred_chunk72.tsv": {
+ "bytes":    44346,
+"rows": 1200 
+},
+"geom11_point_pred_chunk73.tsv": {
+ "bytes":    18031,
+"rows": 1200 
+},
+"geom11_point_pred_chunk74.tsv": {
+ "bytes":    18054,
+"rows": 1200 
+},
+"geom11_point_pred_chunk75.tsv": {
+ "bytes":    18043,
+"rows": 1200 
+},
+"geom11_point_pred_chunk76.tsv": {
+ "bytes":    18040,
+"rows": 1200 
+},
+"geom11_point_pred_chunk77.tsv": {
+ "bytes":    18046,
+"rows": 1200 
+},
+"geom11_point_pred_chunk78.tsv": {
+ "bytes":    18041,
+"rows": 1200 
+},
+"geom11_point_pred_chunk79.tsv": {
+ "bytes":    22341,
+"rows": 1200 
+},
+"geom11_point_pred_chunk80.tsv": {
+ "bytes":    22364,
+"rows": 1200 
+},
+"geom11_point_pred_chunk81.tsv": {
+ "bytes":    22361,
+"rows": 1200 
+},
+"geom11_point_pred_chunk82.tsv": {
+ "bytes":    22347,
+"rows": 1200 
+},
+"geom11_point_pred_chunk83.tsv": {
+ "bytes":    22347,
+"rows": 1200 
+},
+"geom11_point_pred_chunk84.tsv": {
+ "bytes":    22351,
+"rows": 1200 
+},
+"geom11_point_pred_chunk85.tsv": {
+ "bytes":    18406,
+"rows": 1200 
+},
+"geom11_point_pred_chunk86.tsv": {
+ "bytes":    18428,
+"rows": 1200 
+},
+"geom11_point_pred_chunk87.tsv": {
+ "bytes":    18417,
+"rows": 1200 
+},
+"geom11_point_pred_chunk88.tsv": {
+ "bytes":    18413,
+"rows": 1200 
+},
+"geom11_point_pred_chunk89.tsv": {
+ "bytes":    18420,
+"rows": 1200 
+},
+"geom11_point_pred_chunk90.tsv": {
+ "bytes":    18415,
+"rows": 1200 
+},
+"geom11_point_pred_chunk91.tsv": {
+ "bytes":    26016,
+"rows": 1200 
+},
+"geom11_point_pred_chunk92.tsv": {
+ "bytes":    26047,
+"rows": 1200 
+},
+"geom11_point_pred_chunk93.tsv": {
+ "bytes":    26062,
+"rows": 1200 
+},
+"geom11_point_pred_chunk94.tsv": {
+ "bytes":    26044,
+"rows": 1200 
+},
+"geom11_point_pred_chunk95.tsv": {
+ "bytes":    26054,
+"rows": 1200 
+},
+"geom11_point_pred_chunk96.tsv": {
+ "bytes":    26043,
+"rows": 1200 
+},
+"geom11_point_pred_chunk97.tsv": {
+ "bytes":    19077,
+"rows": 1200 
+},
+"geom11_point_pred_chunk98.tsv": {
+ "bytes":    19094,
+"rows": 1200 
+},
+"geom11_point_pred_chunk99.tsv": {
+ "bytes":    19086,
+"rows": 1200 
+},
+"geom11_point_pred_chunk100.tsv": {
+ "bytes":    19086,
+"rows": 1200 
+},
+"geom11_point_pred_chunk101.tsv": {
+ "bytes":    19083,
+"rows": 1200 
+},
+"geom11_point_pred_chunk102.tsv": {
+ "bytes":    19082,
+"rows": 1200 
+},
+"geom11_point_pred_chunk103.tsv": {
+ "bytes":    32650,
+"rows": 1200 
+},
+"geom11_point_pred_chunk104.tsv": {
+ "bytes":    32650,
+"rows": 1200 
+},
+"geom11_point_pred_chunk105.tsv": {
+ "bytes":    32667,
+"rows": 1200 
+},
+"geom11_point_pred_chunk106.tsv": {
+ "bytes":    32637,
+"rows": 1200 
+},
+"geom11_point_pred_chunk107.tsv": {
+ "bytes":    32668,
+"rows": 1200 
+},
+"geom11_point_pred_chunk108.tsv": {
+ "bytes":    32641,
+"rows": 1200 
+},
+"geom11_point_pred_chunk109.tsv": {
+ "bytes":    17857,
+"rows": 1200 
+},
+"geom11_point_pred_chunk110.tsv": {
+ "bytes":    17847,
+"rows": 1200 
+},
+"geom11_point_pred_chunk111.tsv": {
+ "bytes":    17868,
+"rows": 1200 
+},
+"geom11_point_pred_chunk112.tsv": {
+ "bytes":    17874,
+"rows": 1200 
+},
+"geom11_point_pred_chunk113.tsv": {
+ "bytes":    17848,
+"rows": 1200 
+},
+"geom11_point_pred_chunk114.tsv": {
+ "bytes":    17868,
+"rows": 1200 
+},
+"geom11_point_pred_chunk115.tsv": {
+ "bytes":    20250,
+"rows": 1200 
+},
+"geom11_point_pred_chunk116.tsv": {
+ "bytes":    20261,
+"rows": 1200 
+},
+"geom11_point_pred_chunk117.tsv": {
+ "bytes":    20283,
+"rows": 1200 
+},
+"geom11_point_pred_chunk118.tsv": {
+ "bytes":    20291,
+"rows": 1200 
+},
+"geom11_point_pred_chunk119.tsv": {
+ "bytes":    20255,
+"rows": 1200 
+},
+"geom11_point_pred_chunk120.tsv": {
+ "bytes":    20267,
+"rows": 1200 
+},
+"geom11_point_pred_chunk121.tsv": {
+ "bytes":    44373,
+"rows": 1200 
+},
+"geom11_point_pred_chunk122.tsv": {
+ "bytes":    44375,
+"rows": 1200 
+},
+"geom11_point_pred_chunk123.tsv": {
+ "bytes":    44380,
+"rows": 1200 
+},
+"geom11_point_pred_chunk124.tsv": {
+ "bytes":    44389,
+"rows": 1200 
+},
+"geom11_point_pred_chunk125.tsv": {
+ "bytes":    44384,
+"rows": 1200 
+},
+"geom11_point_pred_chunk126.tsv": {
+ "bytes":    44378,
+"rows": 1200 
+},
+"geom11_point_pred_chunk127.tsv": {
+ "bytes":    18046,
+"rows": 1200 
+},
+"geom11_point_pred_chunk128.tsv": {
+ "bytes":    18036,
+"rows": 1200 
+},
+"geom11_point_pred_chunk129.tsv": {
+ "bytes":    18057,
+"rows": 1200 
+},
+"geom11_point_pred_chunk130.tsv": {
+ "bytes":    18062,
+"rows": 1200 
+},
+"geom11_point_pred_chunk131.tsv": {
+ "bytes":    18036,
+"rows": 1200 
+},
+"geom11_point_pred_chunk132.tsv": {
+ "bytes":    18057,
+"rows": 1200 
+},
+"geom11_point_pred_chunk133.tsv": {
+ "bytes":    22344,
+"rows": 1200 
+},
+"geom11_point_pred_chunk134.tsv": {
+ "bytes":    22355,
+"rows": 1200 
+},
+"geom11_point_pred_chunk135.tsv": {
+ "bytes":    22372,
+"rows": 1200 
+},
+"geom11_point_pred_chunk136.tsv": {
+ "bytes":    22360,
+"rows": 1200 
+},
+"geom11_point_pred_chunk137.tsv": {
+ "bytes":    22348,
+"rows": 1200 
+},
+"geom11_point_pred_chunk138.tsv": {
+ "bytes":    22358,
+"rows": 1200 
+},
+"geom11_point_pred_chunk139.tsv": {
+ "bytes":    18405,
+"rows": 1200 
+},
+"geom11_point_pred_chunk140.tsv": {
+ "bytes":    18413,
+"rows": 1200 
+},
+"geom11_point_pred_chunk141.tsv": {
+ "bytes":    18433,
+"rows": 1200 
+},
+"geom11_point_pred_chunk142.tsv": {
+ "bytes":    18436,
+"rows": 1200 
+},
+"geom11_point_pred_chunk143.tsv": {
+ "bytes":    18409,
+"rows": 1200 
+},
+"geom11_point_pred_chunk144.tsv": {
+ "bytes":    18434,
+"rows": 1200 
+},
+"geom11_point_pred_chunk145.tsv": {
+ "bytes":    26024,
+"rows": 1200 
+},
+"geom11_point_pred_chunk146.tsv": {
+ "bytes":    26048,
+"rows": 1200 
+},
+"geom11_point_pred_chunk147.tsv": {
+ "bytes":    26053,
+"rows": 1200 
+},
+"geom11_point_pred_chunk148.tsv": {
+ "bytes":    26040,
+"rows": 1200 
+},
+"geom11_point_pred_chunk149.tsv": {
+ "bytes":    26047,
+"rows": 1200 
+},
+"geom11_point_pred_chunk150.tsv": {
+ "bytes":    26054,
+"rows": 1200 
+},
+"geom11_point_pred_chunk151.tsv": {
+ "bytes":    19076,
+"rows": 1200 
+},
+"geom11_point_pred_chunk152.tsv": {
+ "bytes":    19080,
+"rows": 1200 
+},
+"geom11_point_pred_chunk153.tsv": {
+ "bytes":    19102,
+"rows": 1200 
+},
+"geom11_point_pred_chunk154.tsv": {
+ "bytes":    19108,
+"rows": 1200 
+},
+"geom11_point_pred_chunk155.tsv": {
+ "bytes":    19081,
+"rows": 1200 
+},
+"geom11_point_pred_chunk156.tsv": {
+ "bytes":    19083,
+"rows": 1200 
+},
+"geom11_point_pred_chunk157.tsv": {
+ "bytes":    32650,
+"rows": 1200 
+},
+"geom11_point_pred_chunk158.tsv": {
+ "bytes":    32655,
+"rows": 1200 
+},
+"geom11_point_pred_chunk159.tsv": {
+ "bytes":    32676,
+"rows": 1200 
+},
+"geom11_point_pred_chunk160.tsv": {
+ "bytes":    32662,
+"rows": 1200 
+},
+"geom11_point_pred_chunk161.tsv": {
+ "bytes":    32652,
+"rows": 1200 
+},
+"geom11_point_pred_chunk162.tsv": {
+ "bytes":    32668,
+"rows": 1200 
+},
+"geom11_point_pred_chunk163.tsv": {
+ "bytes":    17854,
+"rows": 1200 
+},
+"geom11_point_pred_chunk164.tsv": {
+ "bytes":    17869,
+"rows": 1200 
+},
+"geom11_point_pred_chunk165.tsv": {
+ "bytes":    17861,
+"rows": 1200 
+},
+"geom11_point_pred_chunk166.tsv": {
+ "bytes":    17867,
+"rows": 1200 
+},
+"geom11_point_pred_chunk167.tsv": {
+ "bytes":    17844,
+"rows": 1200 
+},
+"geom11_point_pred_chunk168.tsv": {
+ "bytes":    17854,
+"rows": 1200 
+},
+"geom11_point_pred_chunk169.tsv": {
+ "bytes":    20265,
+"rows": 1200 
+},
+"geom11_point_pred_chunk170.tsv": {
+ "bytes":    20274,
+"rows": 1200 
+},
+"geom11_point_pred_chunk171.tsv": {
+ "bytes":    20273,
+"rows": 1200 
+},
+"geom11_point_pred_chunk172.tsv": {
+ "bytes":    20284,
+"rows": 1200 
+},
+"geom11_point_pred_chunk173.tsv": {
+ "bytes":    20241,
+"rows": 1200 
+},
+"geom11_point_pred_chunk174.tsv": {
+ "bytes":    20260,
+"rows": 1200 
+},
+"geom11_point_pred_chunk175.tsv": {
+ "bytes":    44366,
+"rows": 1200 
+},
+"geom11_point_pred_chunk176.tsv": {
+ "bytes":    44368,
+"rows": 1200 
+},
+"geom11_point_pred_chunk177.tsv": {
+ "bytes":    44373,
+"rows": 1200 
+},
+"geom11_point_pred_chunk178.tsv": {
+ "bytes":    44382,
+"rows": 1200 
+},
+"geom11_point_pred_chunk179.tsv": {
+ "bytes":    44377,
+"rows": 1200 
+},
+"geom11_point_pred_chunk180.tsv": {
+ "bytes":    44371,
+"rows": 1200 
+},
+"geom11_point_pred_chunk181.tsv": {
+ "bytes":    18041,
+"rows": 1200 
+},
+"geom11_point_pred_chunk182.tsv": {
+ "bytes":    18055,
+"rows": 1200 
+},
+"geom11_point_pred_chunk183.tsv": {
+ "bytes":    18047,
+"rows": 1200 
+},
+"geom11_point_pred_chunk184.tsv": {
+ "bytes":    18054,
+"rows": 1200 
+},
+"geom11_point_pred_chunk185.tsv": {
+ "bytes":    18031,
+"rows": 1200 
+},
+"geom11_point_pred_chunk186.tsv": {
+ "bytes":    18042,
+"rows": 1200 
+},
+"geom11_point_pred_chunk187.tsv": {
+ "bytes":    22354,
+"rows": 1200 
+},
+"geom11_point_pred_chunk188.tsv": {
+ "bytes":    22361,
+"rows": 1200 
+},
+"geom11_point_pred_chunk189.tsv": {
+ "bytes":    22332,
+"rows": 1200 
+},
+"geom11_point_pred_chunk190.tsv": {
+ "bytes":    22371,
+"rows": 1200 
+},
+"geom11_point_pred_chunk191.tsv": {
+ "bytes":    22337,
+"rows": 1200 
+},
+"geom11_point_pred_chunk192.tsv": {
+ "bytes":    22350,
+"rows": 1200 
+},
+"geom11_point_pred_chunk193.tsv": {
+ "bytes":    18418,
+"rows": 1200 
+},
+"geom11_point_pred_chunk194.tsv": {
+ "bytes":    18429,
+"rows": 1200 
+},
+"geom11_point_pred_chunk195.tsv": {
+ "bytes":    18423,
+"rows": 1200 
+},
+"geom11_point_pred_chunk196.tsv": {
+ "bytes":    18428,
+"rows": 1200 
+},
+"geom11_point_pred_chunk197.tsv": {
+ "bytes":    18407,
+"rows": 1200 
+},
+"geom11_point_pred_chunk198.tsv": {
+ "bytes":    18417,
+"rows": 1200 
+},
+"geom11_point_pred_chunk199.tsv": {
+ "bytes":    26049,
+"rows": 1200 
+},
+"geom11_point_pred_chunk200.tsv": {
+ "bytes":    26065,
+"rows": 1200 
+},
+"geom11_point_pred_chunk201.tsv": {
+ "bytes":    26034,
+"rows": 1200 
+},
+"geom11_point_pred_chunk202.tsv": {
+ "bytes":    26053,
+"rows": 1200 
+},
+"geom11_point_pred_chunk203.tsv": {
+ "bytes":    26031,
+"rows": 1200 
+},
+"geom11_point_pred_chunk204.tsv": {
+ "bytes":    26048,
+"rows": 1200 
+},
+"geom11_point_pred_chunk205.tsv": {
+ "bytes":    19090,
+"rows": 1200 
+},
+"geom11_point_pred_chunk206.tsv": {
+ "bytes":    19097,
+"rows": 1200 
+},
+"geom11_point_pred_chunk207.tsv": {
+ "bytes":    19091,
+"rows": 1200 
+},
+"geom11_point_pred_chunk208.tsv": {
+ "bytes":    19101,
+"rows": 1200 
+},
+"geom11_point_pred_chunk209.tsv": {
+ "bytes":    19075,
+"rows": 1200 
+},
+"geom11_point_pred_chunk210.tsv": {
+ "bytes":    19082,
+"rows": 1200 
+},
+"geom11_point_pred_chunk211.tsv": {
+ "bytes":    32663,
+"rows": 1200 
+},
+"geom11_point_pred_chunk212.tsv": {
+ "bytes":    32679,
+"rows": 1200 
+},
+"geom11_point_pred_chunk213.tsv": {
+ "bytes":    32654,
+"rows": 1200 
+},
+"geom11_point_pred_chunk214.tsv": {
+ "bytes":    32676,
+"rows": 1200 
+},
+"geom11_point_pred_chunk215.tsv": {
+ "bytes":    32650,
+"rows": 1200 
+},
+"geom11_point_pred_chunk216.tsv": {
+ "bytes":    32675,
+"rows": 1200 
+},
+"geom11_point_pred_chunk217.tsv": {
+ "bytes":    17844,
+"rows": 1200 
+},
+"geom11_point_pred_chunk218.tsv": {
+ "bytes":    17858,
+"rows": 1200 
+},
+"geom11_point_pred_chunk219.tsv": {
+ "bytes":    17853,
+"rows": 1200 
+},
+"geom11_point_pred_chunk220.tsv": {
+ "bytes":    17869,
+"rows": 1200 
+},
+"geom11_point_pred_chunk221.tsv": {
+ "bytes":    17835,
+"rows": 1200 
+},
+"geom11_point_pred_chunk222.tsv": {
+ "bytes":    17856,
+"rows": 1200 
+},
+"geom11_point_pred_chunk223.tsv": {
+ "bytes":    20255,
+"rows": 1200 
+},
+"geom11_point_pred_chunk224.tsv": {
+ "bytes":    20259,
+"rows": 1200 
+},
+"geom11_point_pred_chunk225.tsv": {
+ "bytes":    20269,
+"rows": 1200 
+},
+"geom11_point_pred_chunk226.tsv": {
+ "bytes":    20284,
+"rows": 1200 
+},
+"geom11_point_pred_chunk227.tsv": {
+ "bytes":    20237,
+"rows": 1200 
+},
+"geom11_point_pred_chunk228.tsv": {
+ "bytes":    20265,
+"rows": 1200 
+},
+"geom11_point_pred_chunk229.tsv": {
+ "bytes":    44325,
+"rows": 1200 
+},
+"geom11_point_pred_chunk230.tsv": {
+ "bytes":    44327,
+"rows": 1200 
+},
+"geom11_point_pred_chunk231.tsv": {
+ "bytes":    44332,
+"rows": 1200 
+},
+"geom11_point_pred_chunk232.tsv": {
+ "bytes":    44341,
+"rows": 1200 
+},
+"geom11_point_pred_chunk233.tsv": {
+ "bytes":    44336,
+"rows": 1200 
+},
+"geom11_point_pred_chunk234.tsv": {
+ "bytes":    44330,
+"rows": 1200 
+},
+"geom11_point_pred_chunk235.tsv": {
+ "bytes":    18032,
+"rows": 1200 
+},
+"geom11_point_pred_chunk236.tsv": {
+ "bytes":    18045,
+"rows": 1200 
+},
+"geom11_point_pred_chunk237.tsv": {
+ "bytes":    18042,
+"rows": 1200 
+},
+"geom11_point_pred_chunk238.tsv": {
+ "bytes":    18056,
+"rows": 1200 
+},
+"geom11_point_pred_chunk239.tsv": {
+ "bytes":    18022,
+"rows": 1200 
+},
+"geom11_point_pred_chunk240.tsv": {
+ "bytes":    18046,
+"rows": 1200 
+},
+"geom11_point_pred_chunk241.tsv": {
+ "bytes":    22348,
+"rows": 1200 
+},
+"geom11_point_pred_chunk242.tsv": {
+ "bytes":    22340,
+"rows": 1200 
+},
+"geom11_point_pred_chunk243.tsv": {
+ "bytes":    22355,
+"rows": 1200 
+},
+"geom11_point_pred_chunk244.tsv": {
+ "bytes":    22367,
+"rows": 1200 
+},
+"geom11_point_pred_chunk245.tsv": {
+ "bytes":    22309,
+"rows": 1200 
+},
+"geom11_point_pred_chunk246.tsv": {
+ "bytes":    22349,
+"rows": 1200 
+},
+"geom11_point_pred_chunk247.tsv": {
+ "bytes":    18405,
+"rows": 1200 
+},
+"geom11_point_pred_chunk248.tsv": {
+ "bytes":    18421,
+"rows": 1200 
+},
+"geom11_point_pred_chunk249.tsv": {
+ "bytes":    18417,
+"rows": 1200 
+},
+"geom11_point_pred_chunk250.tsv": {
+ "bytes":    18430,
+"rows": 1200 
+},
+"geom11_point_pred_chunk251.tsv": {
+ "bytes":    18394,
+"rows": 1200 
+},
+"geom11_point_pred_chunk252.tsv": {
+ "bytes":    18419,
+"rows": 1200 
+},
+"geom11_point_pred_chunk253.tsv": {
+ "bytes":    26033,
+"rows": 1200 
+},
+"geom11_point_pred_chunk254.tsv": {
+ "bytes":    26034,
+"rows": 1200 
+},
+"geom11_point_pred_chunk255.tsv": {
+ "bytes":    26050,
+"rows": 1200 
+},
+"geom11_point_pred_chunk256.tsv": {
+ "bytes":    26044,
+"rows": 1200 
+},
+"geom11_point_pred_chunk257.tsv": {
+ "bytes":    26012,
+"rows": 1200 
+},
+"geom11_point_pred_chunk258.tsv": {
+ "bytes":    26045,
+"rows": 1200 
+},
+"geom11_point_pred_chunk259.tsv": {
+ "bytes":    19074,
+"rows": 1200 
+},
+"geom11_point_pred_chunk260.tsv": {
+ "bytes":    19089,
+"rows": 1200 
+},
+"geom11_point_pred_chunk261.tsv": {
+ "bytes":    19088,
+"rows": 1200 
+},
+"geom11_point_pred_chunk262.tsv": {
+ "bytes":    19104,
+"rows": 1200 
+},
+"geom11_point_pred_chunk263.tsv": {
+ "bytes":    19062,
+"rows": 1200 
+},
+"geom11_point_pred_chunk264.tsv": {
+ "bytes":    19085,
+"rows": 1200 
+},
+"geom11_point_pred_chunk265.tsv": {
+ "bytes":    32637,
+"rows": 1200 
+},
+"geom11_point_pred_chunk266.tsv": {
+ "bytes":    32633,
+"rows": 1200 
+},
+"geom11_point_pred_chunk267.tsv": {
+ "bytes":    32645,
+"rows": 1200 
+},
+"geom11_point_pred_chunk268.tsv": {
+ "bytes":    32649,
+"rows": 1200 
+},
+"geom11_point_pred_chunk269.tsv": {
+ "bytes":    32628,
+"rows": 1200 
+},
+"geom11_point_pred_chunk270.tsv": {
+ "bytes":    32661,
+"rows": 1200 
+},
+"geom11_point_pred_chunk271.tsv": {
+ "bytes":    17858,
+"rows": 1200 
+},
+"geom11_point_pred_chunk272.tsv": {
+ "bytes":    17856,
+"rows": 1200 
+},
+"geom11_point_pred_chunk273.tsv": {
+ "bytes":    17858,
+"rows": 1200 
+},
+"geom11_point_pred_chunk274.tsv": {
+ "bytes":    17841,
+"rows": 1200 
+},
+"geom11_point_pred_chunk275.tsv": {
+ "bytes":    17858,
+"rows": 1200 
+},
+"geom11_point_pred_chunk276.tsv": {
+ "bytes":    17873,
+"rows": 1200 
+},
+"geom11_point_pred_chunk277.tsv": {
+ "bytes":    20254,
+"rows": 1200 
+},
+"geom11_point_pred_chunk278.tsv": {
+ "bytes":    20273,
+"rows": 1200 
+},
+"geom11_point_pred_chunk279.tsv": {
+ "bytes":    20279,
+"rows": 1200 
+},
+"geom11_point_pred_chunk280.tsv": {
+ "bytes":    20255,
+"rows": 1200 
+},
+"geom11_point_pred_chunk281.tsv": {
+ "bytes":    20244,
+"rows": 1200 
+},
+"geom11_point_pred_chunk282.tsv": {
+ "bytes":    20282,
+"rows": 1200 
+},
+"geom11_point_pred_chunk283.tsv": {
+ "bytes":    44352,
+"rows": 1200 
+},
+"geom11_point_pred_chunk284.tsv": {
+ "bytes":    44354,
+"rows": 1200 
+},
+"geom11_point_pred_chunk285.tsv": {
+ "bytes":    44359,
+"rows": 1200 
+},
+"geom11_point_pred_chunk286.tsv": {
+ "bytes":    44368,
+"rows": 1200 
+},
+"geom11_point_pred_chunk287.tsv": {
+ "bytes":    44363,
+"rows": 1200 
+},
+"geom11_point_pred_chunk288.tsv": {
+ "bytes":    44357,
+"rows": 1200 
+},
+"geom11_point_pred_chunk289.tsv": {
+ "bytes":    18043,
+"rows": 1200 
+},
+"geom11_point_pred_chunk290.tsv": {
+ "bytes":    18044,
+"rows": 1200 
+},
+"geom11_point_pred_chunk291.tsv": {
+ "bytes":    18047,
+"rows": 1200 
+},
+"geom11_point_pred_chunk292.tsv": {
+ "bytes":    18029,
+"rows": 1200 
+},
+"geom11_point_pred_chunk293.tsv": {
+ "bytes":    18044,
+"rows": 1200 
+},
+"geom11_point_pred_chunk294.tsv": {
+ "bytes":    18060,
+"rows": 1200 
+},
+"geom11_point_pred_chunk295.tsv": {
+ "bytes":    22344,
+"rows": 1200 
+},
+"geom11_point_pred_chunk296.tsv": {
+ "bytes":    22361,
+"rows": 1200 
+},
+"geom11_point_pred_chunk297.tsv": {
+ "bytes":    22365,
+"rows": 1200 
+},
+"geom11_point_pred_chunk298.tsv": {
+ "bytes":    22332,
+"rows": 1200 
+},
+"geom11_point_pred_chunk299.tsv": {
+ "bytes":    22338,
+"rows": 1200 
+},
+"geom11_point_pred_chunk300.tsv": {
+ "bytes":    22369,
+"rows": 1200 
+},
+"geom11_point_pred_chunk301.tsv": {
+ "bytes":    18420,
+"rows": 1200 
+},
+"geom11_point_pred_chunk302.tsv": {
+ "bytes":    18422,
+"rows": 1200 
+},
+"geom11_point_pred_chunk303.tsv": {
+ "bytes":    18422,
+"rows": 1200 
+},
+"geom11_point_pred_chunk304.tsv": {
+ "bytes":    18402,
+"rows": 1200 
+},
+"geom11_point_pred_chunk305.tsv": {
+ "bytes":    18419,
+"rows": 1200 
+},
+"geom11_point_pred_chunk306.tsv": {
+ "bytes":    18437,
+"rows": 1200 
+},
+"geom11_point_pred_chunk307.tsv": {
+ "bytes":    26031,
+"rows": 1200 
+},
+"geom11_point_pred_chunk308.tsv": {
+ "bytes":    26039,
+"rows": 1200 
+},
+"geom11_point_pred_chunk309.tsv": {
+ "bytes":    26049,
+"rows": 1200 
+},
+"geom11_point_pred_chunk310.tsv": {
+ "bytes":    26028,
+"rows": 1200 
+},
+"geom11_point_pred_chunk311.tsv": {
+ "bytes":    26040,
+"rows": 1200 
+},
+"geom11_point_pred_chunk312.tsv": {
+ "bytes":    26048,
+"rows": 1200 
+},
+"geom11_point_pred_chunk313.tsv": {
+ "bytes":    19092,
+"rows": 1200 
+},
+"geom11_point_pred_chunk314.tsv": {
+ "bytes":    19091,
+"rows": 1200 
+},
+"geom11_point_pred_chunk315.tsv": {
+ "bytes":    19093,
+"rows": 1200 
+},
+"geom11_point_pred_chunk316.tsv": {
+ "bytes":    19074,
+"rows": 1200 
+},
+"geom11_point_pred_chunk317.tsv": {
+ "bytes":    19088,
+"rows": 1200 
+},
+"geom11_point_pred_chunk318.tsv": {
+ "bytes":    19103,
+"rows": 1200 
+},
+"geom11_point_pred_chunk319.tsv": {
+ "bytes":    32653,
+"rows": 1200 
+},
+"geom11_point_pred_chunk320.tsv": {
+ "bytes":    32660,
+"rows": 1200 
+},
+"geom11_point_pred_chunk321.tsv": {
+ "bytes":    32661,
+"rows": 1200 
+},
+"geom11_point_pred_chunk322.tsv": {
+ "bytes":    32650,
+"rows": 1200 
+},
+"geom11_point_pred_chunk323.tsv": {
+ "bytes":    32659,
+"rows": 1200 
+},
+"geom11_point_pred_chunk324.tsv": {
+ "bytes":    32676,
+"rows": 1200 
+} 
+} 
 },
 "geom12_line_pred": {
  "geom": "line",
@@ -897,15 +2259,15 @@
 "group": "Ensemble",
 "colour": "Algorithme",
 "size": "Algorithme",
-"showSelected1": "tendence_difficulté_Nentraînement",
+"showSelected1": "tendance_difficulté_Nentraînement",
 "showSelected2": "Algorithme"
 },
 "params": {
  "na.rm": false,
 "na.rm": false,
 "help": "Courbe noir pour la fonction de prédiction idéale, utilisée pour la création de ces données",
-"showSelected": [ "tendence_difficulté_Nentraînement", "Algorithme" ],
-"help_showSelected": [ "tendence_difficulté_Nentraînement", "Algorithme" ] 
+"showSelected": [ "tendance_difficulté_Nentraînement", "Algorithme" ],
+"help_showSelected": [ "tendance_difficulté_Nentraînement", "Algorithme" ] 
 },
 "types": {
 "size": "numeric",
@@ -919,7 +2281,7 @@
 "PANEL": "integer"
 },
 "chunk_order": [
- "tendence_difficulté_Nentraînement" 
+ "tendance_difficulté_Nentraînement" 
 ],
 "nest_order": [
  "showSelected2",
@@ -994,7 +2356,229 @@
 "sin impossible 56": 53,
 "sin impossible 563": 54 
 },
-"total": 54 
+"total": 54,
+"chunk_info": {
+ "geom12_line_pred_chunk_common.tsv": {
+ "bytes":    13704,
+"rows": 402 
+},
+"geom12_line_pred_chunk1.tsv": {
+ "bytes":       48,
+"rows": 2 
+},
+"geom12_line_pred_chunk2.tsv": {
+ "bytes":       48,
+"rows": 2 
+},
+"geom12_line_pred_chunk3.tsv": {
+ "bytes":       48,
+"rows": 2 
+},
+"geom12_line_pred_chunk4.tsv": {
+ "bytes":       48,
+"rows": 2 
+},
+"geom12_line_pred_chunk5.tsv": {
+ "bytes":       48,
+"rows": 2 
+},
+"geom12_line_pred_chunk6.tsv": {
+ "bytes":       48,
+"rows": 2 
+},
+"geom12_line_pred_chunk7.tsv": {
+ "bytes":       48,
+"rows": 2 
+},
+"geom12_line_pred_chunk8.tsv": {
+ "bytes":       48,
+"rows": 2 
+},
+"geom12_line_pred_chunk9.tsv": {
+ "bytes":       48,
+"rows": 2 
+},
+"geom12_line_pred_chunk10.tsv": {
+ "bytes":       48,
+"rows": 2 
+},
+"geom12_line_pred_chunk11.tsv": {
+ "bytes":       48,
+"rows": 2 
+},
+"geom12_line_pred_chunk12.tsv": {
+ "bytes":       48,
+"rows": 2 
+},
+"geom12_line_pred_chunk13.tsv": {
+ "bytes":       48,
+"rows": 2 
+},
+"geom12_line_pred_chunk14.tsv": {
+ "bytes":       48,
+"rows": 2 
+},
+"geom12_line_pred_chunk15.tsv": {
+ "bytes":       48,
+"rows": 2 
+},
+"geom12_line_pred_chunk16.tsv": {
+ "bytes":       48,
+"rows": 2 
+},
+"geom12_line_pred_chunk17.tsv": {
+ "bytes":       48,
+"rows": 2 
+},
+"geom12_line_pred_chunk18.tsv": {
+ "bytes":       48,
+"rows": 2 
+},
+"geom12_line_pred_chunk19.tsv": {
+ "bytes":       48,
+"rows": 2 
+},
+"geom12_line_pred_chunk20.tsv": {
+ "bytes":       48,
+"rows": 2 
+},
+"geom12_line_pred_chunk21.tsv": {
+ "bytes":       48,
+"rows": 2 
+},
+"geom12_line_pred_chunk22.tsv": {
+ "bytes":       48,
+"rows": 2 
+},
+"geom12_line_pred_chunk23.tsv": {
+ "bytes":       48,
+"rows": 2 
+},
+"geom12_line_pred_chunk24.tsv": {
+ "bytes":       48,
+"rows": 2 
+},
+"geom12_line_pred_chunk25.tsv": {
+ "bytes":       48,
+"rows": 2 
+},
+"geom12_line_pred_chunk26.tsv": {
+ "bytes":       48,
+"rows": 2 
+},
+"geom12_line_pred_chunk27.tsv": {
+ "bytes":       48,
+"rows": 2 
+},
+"geom12_line_pred_chunk28.tsv": {
+ "bytes":     8008,
+"rows": 402 
+},
+"geom12_line_pred_chunk29.tsv": {
+ "bytes":     8008,
+"rows": 402 
+},
+"geom12_line_pred_chunk30.tsv": {
+ "bytes":     8008,
+"rows": 402 
+},
+"geom12_line_pred_chunk31.tsv": {
+ "bytes":     8008,
+"rows": 402 
+},
+"geom12_line_pred_chunk32.tsv": {
+ "bytes":     8008,
+"rows": 402 
+},
+"geom12_line_pred_chunk33.tsv": {
+ "bytes":     8008,
+"rows": 402 
+},
+"geom12_line_pred_chunk34.tsv": {
+ "bytes":     8008,
+"rows": 402 
+},
+"geom12_line_pred_chunk35.tsv": {
+ "bytes":     8008,
+"rows": 402 
+},
+"geom12_line_pred_chunk36.tsv": {
+ "bytes":     8008,
+"rows": 402 
+},
+"geom12_line_pred_chunk37.tsv": {
+ "bytes":     8004,
+"rows": 402 
+},
+"geom12_line_pred_chunk38.tsv": {
+ "bytes":     8004,
+"rows": 402 
+},
+"geom12_line_pred_chunk39.tsv": {
+ "bytes":     8004,
+"rows": 402 
+},
+"geom12_line_pred_chunk40.tsv": {
+ "bytes":     8004,
+"rows": 402 
+},
+"geom12_line_pred_chunk41.tsv": {
+ "bytes":     8004,
+"rows": 402 
+},
+"geom12_line_pred_chunk42.tsv": {
+ "bytes":     8004,
+"rows": 402 
+},
+"geom12_line_pred_chunk43.tsv": {
+ "bytes":     8004,
+"rows": 402 
+},
+"geom12_line_pred_chunk44.tsv": {
+ "bytes":     8004,
+"rows": 402 
+},
+"geom12_line_pred_chunk45.tsv": {
+ "bytes":     8004,
+"rows": 402 
+},
+"geom12_line_pred_chunk46.tsv": {
+ "bytes":     8016,
+"rows": 402 
+},
+"geom12_line_pred_chunk47.tsv": {
+ "bytes":     8016,
+"rows": 402 
+},
+"geom12_line_pred_chunk48.tsv": {
+ "bytes":     8016,
+"rows": 402 
+},
+"geom12_line_pred_chunk49.tsv": {
+ "bytes":     8016,
+"rows": 402 
+},
+"geom12_line_pred_chunk50.tsv": {
+ "bytes":     8016,
+"rows": 402 
+},
+"geom12_line_pred_chunk51.tsv": {
+ "bytes":     8016,
+"rows": 402 
+},
+"geom12_line_pred_chunk52.tsv": {
+ "bytes":     8016,
+"rows": 402 
+},
+"geom12_line_pred_chunk53.tsv": {
+ "bytes":     8016,
+"rows": 402 
+},
+"geom12_line_pred_chunk54.tsv": {
+ "bytes":     8016,
+"rows": 402 
+} 
+} 
 },
 "geom13_line_pred": {
  "geom": "line",
@@ -1005,8 +2589,8 @@
 "key": "paste(Algorithme, Ensemble)",
 "colour": "Algorithme",
 "size": "Algorithme",
-"group": "paste(Algorithme, Ensemble)",
-"showSelected1": "tendence_difficulté_Nentraînement",
+"group": "group",
+"showSelected1": "tendance_difficulté_Nentraînement",
 "showSelected2": "bloc.test",
 "showSelected3": "Algorithme"
 },
@@ -1014,8 +2598,8 @@
  "na.rm": false,
 "na.rm": false,
 "help": "Courbes en bleue et rouge pour les fonctions de prédiction",
-"showSelected": [ "tendence_difficulté_Nentraînement", "bloc.test", "Algorithme" ],
-"help_showSelected": [ "tendence_difficulté_Nentraînement", "bloc.test", "Algorithme" ] 
+"showSelected": [ "tendance_difficulté_Nentraînement", "bloc.test", "Algorithme" ],
+"help_showSelected": [ "tendance_difficulté_Nentraînement", "bloc.test", "Algorithme" ] 
 },
 "types": {
 "size": "numeric",
@@ -1030,7 +2614,7 @@
 "PANEL": "integer"
 },
 "chunk_order": [
- "tendence_difficulté_Nentraînement",
+ "tendance_difficulté_Nentraînement",
 "bloc.test" 
 ],
 "nest_order": [
@@ -1484,7 +3068,1309 @@
 "6": 324 
 } 
 },
-"total": 324 
+"total": 324,
+"chunk_info": {
+ "geom13_line_pred_chunk_common.tsv": {
+ "bytes":    50686,
+"rows": 804 
+},
+"geom13_line_pred_chunk1.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk2.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk3.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk4.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk5.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk6.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk7.tsv": {
+ "bytes":     7942,
+"rows": 404 
+},
+"geom13_line_pred_chunk8.tsv": {
+ "bytes":     8086,
+"rows": 404 
+},
+"geom13_line_pred_chunk9.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk10.tsv": {
+ "bytes":     8002,
+"rows": 404 
+},
+"geom13_line_pred_chunk11.tsv": {
+ "bytes":     8020,
+"rows": 404 
+},
+"geom13_line_pred_chunk12.tsv": {
+ "bytes":     8014,
+"rows": 404 
+},
+"geom13_line_pred_chunk13.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk14.tsv": {
+ "bytes":       86,
+"rows": 4 
+},
+"geom13_line_pred_chunk15.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk16.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk17.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk18.tsv": {
+ "bytes":       84,
+"rows": 4 
+},
+"geom13_line_pred_chunk19.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk20.tsv": {
+ "bytes":       84,
+"rows": 4 
+},
+"geom13_line_pred_chunk21.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk22.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk23.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk24.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk25.tsv": {
+ "bytes":     8050,
+"rows": 404 
+},
+"geom13_line_pred_chunk26.tsv": {
+ "bytes":     7916,
+"rows": 404 
+},
+"geom13_line_pred_chunk27.tsv": {
+ "bytes":     8066,
+"rows": 404 
+},
+"geom13_line_pred_chunk28.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk29.tsv": {
+ "bytes":     8078,
+"rows": 404 
+},
+"geom13_line_pred_chunk30.tsv": {
+ "bytes":     8048,
+"rows": 404 
+},
+"geom13_line_pred_chunk31.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk32.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk33.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk34.tsv": {
+ "bytes":     7852,
+"rows": 404 
+},
+"geom13_line_pred_chunk35.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk36.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk37.tsv": {
+ "bytes":     7636,
+"rows": 404 
+},
+"geom13_line_pred_chunk38.tsv": {
+ "bytes":     8028,
+"rows": 404 
+},
+"geom13_line_pred_chunk39.tsv": {
+ "bytes":     8044,
+"rows": 404 
+},
+"geom13_line_pred_chunk40.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk41.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk42.tsv": {
+ "bytes":     7888,
+"rows": 404 
+},
+"geom13_line_pred_chunk43.tsv": {
+ "bytes":     7996,
+"rows": 404 
+},
+"geom13_line_pred_chunk44.tsv": {
+ "bytes":     8008,
+"rows": 404 
+},
+"geom13_line_pred_chunk45.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk46.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk47.tsv": {
+ "bytes":     8048,
+"rows": 404 
+},
+"geom13_line_pred_chunk48.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk49.tsv": {
+ "bytes":     7790,
+"rows": 404 
+},
+"geom13_line_pred_chunk50.tsv": {
+ "bytes":     8080,
+"rows": 404 
+},
+"geom13_line_pred_chunk51.tsv": {
+ "bytes":     8086,
+"rows": 404 
+},
+"geom13_line_pred_chunk52.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk53.tsv": {
+ "bytes":     8052,
+"rows": 404 
+},
+"geom13_line_pred_chunk54.tsv": {
+ "bytes":     8084,
+"rows": 404 
+},
+"geom13_line_pred_chunk55.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk56.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk57.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk58.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk59.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk60.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk61.tsv": {
+ "bytes":     8028,
+"rows": 404 
+},
+"geom13_line_pred_chunk62.tsv": {
+ "bytes":     7994,
+"rows": 404 
+},
+"geom13_line_pred_chunk63.tsv": {
+ "bytes":     7896,
+"rows": 404 
+},
+"geom13_line_pred_chunk64.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk65.tsv": {
+ "bytes":     7996,
+"rows": 404 
+},
+"geom13_line_pred_chunk66.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk67.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk68.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk69.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk70.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk71.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk72.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk73.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk74.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk75.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk76.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk77.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk78.tsv": {
+ "bytes":       84,
+"rows": 4 
+},
+"geom13_line_pred_chunk79.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk80.tsv": {
+ "bytes":     8040,
+"rows": 404 
+},
+"geom13_line_pred_chunk81.tsv": {
+ "bytes":     8064,
+"rows": 404 
+},
+"geom13_line_pred_chunk82.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk83.tsv": {
+ "bytes":     7796,
+"rows": 404 
+},
+"geom13_line_pred_chunk84.tsv": {
+ "bytes":     8068,
+"rows": 404 
+},
+"geom13_line_pred_chunk85.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk86.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk87.tsv": {
+ "bytes":     7922,
+"rows": 404 
+},
+"geom13_line_pred_chunk88.tsv": {
+ "bytes":     7898,
+"rows": 404 
+},
+"geom13_line_pred_chunk89.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk90.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk91.tsv": {
+ "bytes":     7456,
+"rows": 404 
+},
+"geom13_line_pred_chunk92.tsv": {
+ "bytes":     8018,
+"rows": 404 
+},
+"geom13_line_pred_chunk93.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk94.tsv": {
+ "bytes":     7816,
+"rows": 404 
+},
+"geom13_line_pred_chunk95.tsv": {
+ "bytes":     8040,
+"rows": 404 
+},
+"geom13_line_pred_chunk96.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk97.tsv": {
+ "bytes":     8036,
+"rows": 404 
+},
+"geom13_line_pred_chunk98.tsv": {
+ "bytes":     8000,
+"rows": 404 
+},
+"geom13_line_pred_chunk99.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk100.tsv": {
+ "bytes":     8086,
+"rows": 404 
+},
+"geom13_line_pred_chunk101.tsv": {
+ "bytes":     8086,
+"rows": 404 
+},
+"geom13_line_pred_chunk102.tsv": {
+ "bytes":     8006,
+"rows": 404 
+},
+"geom13_line_pred_chunk103.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk104.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk105.tsv": {
+ "bytes":     8086,
+"rows": 404 
+},
+"geom13_line_pred_chunk106.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk107.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk108.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk109.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk110.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk111.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk112.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk113.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk114.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk115.tsv": {
+ "bytes":     8042,
+"rows": 404 
+},
+"geom13_line_pred_chunk116.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk117.tsv": {
+ "bytes":     8058,
+"rows": 404 
+},
+"geom13_line_pred_chunk118.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk119.tsv": {
+ "bytes":     8026,
+"rows": 404 
+},
+"geom13_line_pred_chunk120.tsv": {
+ "bytes":     8012,
+"rows": 404 
+},
+"geom13_line_pred_chunk121.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk122.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk123.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk124.tsv": {
+ "bytes":       86,
+"rows": 4 
+},
+"geom13_line_pred_chunk125.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk126.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk127.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk128.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk129.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk130.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk131.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk132.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk133.tsv": {
+ "bytes":     8086,
+"rows": 404 
+},
+"geom13_line_pred_chunk134.tsv": {
+ "bytes":     8032,
+"rows": 404 
+},
+"geom13_line_pred_chunk135.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk136.tsv": {
+ "bytes":     8076,
+"rows": 404 
+},
+"geom13_line_pred_chunk137.tsv": {
+ "bytes":     8024,
+"rows": 404 
+},
+"geom13_line_pred_chunk138.tsv": {
+ "bytes":     8076,
+"rows": 404 
+},
+"geom13_line_pred_chunk139.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk140.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk141.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk142.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk143.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk144.tsv": {
+ "bytes":     7932,
+"rows": 404 
+},
+"geom13_line_pred_chunk145.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk146.tsv": {
+ "bytes":     8052,
+"rows": 404 
+},
+"geom13_line_pred_chunk147.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk148.tsv": {
+ "bytes":     8008,
+"rows": 404 
+},
+"geom13_line_pred_chunk149.tsv": {
+ "bytes":     8026,
+"rows": 404 
+},
+"geom13_line_pred_chunk150.tsv": {
+ "bytes":     7976,
+"rows": 404 
+},
+"geom13_line_pred_chunk151.tsv": {
+ "bytes":     8052,
+"rows": 404 
+},
+"geom13_line_pred_chunk152.tsv": {
+ "bytes":     8014,
+"rows": 404 
+},
+"geom13_line_pred_chunk153.tsv": {
+ "bytes":     8086,
+"rows": 404 
+},
+"geom13_line_pred_chunk154.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk155.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk156.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk157.tsv": {
+ "bytes":     8074,
+"rows": 404 
+},
+"geom13_line_pred_chunk158.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk159.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk160.tsv": {
+ "bytes":     8024,
+"rows": 404 
+},
+"geom13_line_pred_chunk161.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk162.tsv": {
+ "bytes":     8086,
+"rows": 404 
+},
+"geom13_line_pred_chunk163.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk164.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk165.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk166.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk167.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk168.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk169.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk170.tsv": {
+ "bytes":     7930,
+"rows": 404 
+},
+"geom13_line_pred_chunk171.tsv": {
+ "bytes":     8048,
+"rows": 404 
+},
+"geom13_line_pred_chunk172.tsv": {
+ "bytes":     8028,
+"rows": 404 
+},
+"geom13_line_pred_chunk173.tsv": {
+ "bytes":     8046,
+"rows": 404 
+},
+"geom13_line_pred_chunk174.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk175.tsv": {
+ "bytes":     7946,
+"rows": 404 
+},
+"geom13_line_pred_chunk176.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk177.tsv": {
+ "bytes":     8026,
+"rows": 404 
+},
+"geom13_line_pred_chunk178.tsv": {
+ "bytes":     8068,
+"rows": 404 
+},
+"geom13_line_pred_chunk179.tsv": {
+ "bytes":     7968,
+"rows": 404 
+},
+"geom13_line_pred_chunk180.tsv": {
+ "bytes":     8042,
+"rows": 404 
+},
+"geom13_line_pred_chunk181.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk182.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk183.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk184.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk185.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk186.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk187.tsv": {
+ "bytes":     8008,
+"rows": 404 
+},
+"geom13_line_pred_chunk188.tsv": {
+ "bytes":     7992,
+"rows": 404 
+},
+"geom13_line_pred_chunk189.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk190.tsv": {
+ "bytes":     7974,
+"rows": 404 
+},
+"geom13_line_pred_chunk191.tsv": {
+ "bytes":     8064,
+"rows": 404 
+},
+"geom13_line_pred_chunk192.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk193.tsv": {
+ "bytes":     7816,
+"rows": 404 
+},
+"geom13_line_pred_chunk194.tsv": {
+ "bytes":     7898,
+"rows": 404 
+},
+"geom13_line_pred_chunk195.tsv": {
+ "bytes":     7768,
+"rows": 404 
+},
+"geom13_line_pred_chunk196.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk197.tsv": {
+ "bytes":     7824,
+"rows": 404 
+},
+"geom13_line_pred_chunk198.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk199.tsv": {
+ "bytes":     7976,
+"rows": 404 
+},
+"geom13_line_pred_chunk200.tsv": {
+ "bytes":     8052,
+"rows": 404 
+},
+"geom13_line_pred_chunk201.tsv": {
+ "bytes":     8074,
+"rows": 404 
+},
+"geom13_line_pred_chunk202.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk203.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk204.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk205.tsv": {
+ "bytes":     7948,
+"rows": 404 
+},
+"geom13_line_pred_chunk206.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk207.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk208.tsv": {
+ "bytes":     7958,
+"rows": 404 
+},
+"geom13_line_pred_chunk209.tsv": {
+ "bytes":     8022,
+"rows": 404 
+},
+"geom13_line_pred_chunk210.tsv": {
+ "bytes":     7956,
+"rows": 404 
+},
+"geom13_line_pred_chunk211.tsv": {
+ "bytes":     8004,
+"rows": 404 
+},
+"geom13_line_pred_chunk212.tsv": {
+ "bytes":     8068,
+"rows": 404 
+},
+"geom13_line_pred_chunk213.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk214.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk215.tsv": {
+ "bytes":     8034,
+"rows": 404 
+},
+"geom13_line_pred_chunk216.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk217.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk218.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk219.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk220.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk221.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk222.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk223.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk224.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk225.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk226.tsv": {
+ "bytes":     8068,
+"rows": 404 
+},
+"geom13_line_pred_chunk227.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk228.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk229.tsv": {
+ "bytes":     8038,
+"rows": 404 
+},
+"geom13_line_pred_chunk230.tsv": {
+ "bytes":     8032,
+"rows": 404 
+},
+"geom13_line_pred_chunk231.tsv": {
+ "bytes":     8026,
+"rows": 404 
+},
+"geom13_line_pred_chunk232.tsv": {
+ "bytes":     8070,
+"rows": 404 
+},
+"geom13_line_pred_chunk233.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk234.tsv": {
+ "bytes":     8014,
+"rows": 404 
+},
+"geom13_line_pred_chunk235.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk236.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk237.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk238.tsv": {
+ "bytes":       84,
+"rows": 4 
+},
+"geom13_line_pred_chunk239.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk240.tsv": {
+ "bytes":       84,
+"rows": 4 
+},
+"geom13_line_pred_chunk241.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk242.tsv": {
+ "bytes":     8064,
+"rows": 404 
+},
+"geom13_line_pred_chunk243.tsv": {
+ "bytes":     7986,
+"rows": 404 
+},
+"geom13_line_pred_chunk244.tsv": {
+ "bytes":     7904,
+"rows": 404 
+},
+"geom13_line_pred_chunk245.tsv": {
+ "bytes":     8034,
+"rows": 404 
+},
+"geom13_line_pred_chunk246.tsv": {
+ "bytes":     8074,
+"rows": 404 
+},
+"geom13_line_pred_chunk247.tsv": {
+ "bytes":     8086,
+"rows": 404 
+},
+"geom13_line_pred_chunk248.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk249.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk250.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk251.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk252.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk253.tsv": {
+ "bytes":     8042,
+"rows": 404 
+},
+"geom13_line_pred_chunk254.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk255.tsv": {
+ "bytes":     7930,
+"rows": 404 
+},
+"geom13_line_pred_chunk256.tsv": {
+ "bytes":     8026,
+"rows": 404 
+},
+"geom13_line_pred_chunk257.tsv": {
+ "bytes":     7952,
+"rows": 404 
+},
+"geom13_line_pred_chunk258.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk259.tsv": {
+ "bytes":     7836,
+"rows": 404 
+},
+"geom13_line_pred_chunk260.tsv": {
+ "bytes":     7980,
+"rows": 404 
+},
+"geom13_line_pred_chunk261.tsv": {
+ "bytes":     7944,
+"rows": 404 
+},
+"geom13_line_pred_chunk262.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk263.tsv": {
+ "bytes":     8008,
+"rows": 404 
+},
+"geom13_line_pred_chunk264.tsv": {
+ "bytes":     8024,
+"rows": 404 
+},
+"geom13_line_pred_chunk265.tsv": {
+ "bytes":     8046,
+"rows": 404 
+},
+"geom13_line_pred_chunk266.tsv": {
+ "bytes":     7992,
+"rows": 404 
+},
+"geom13_line_pred_chunk267.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk268.tsv": {
+ "bytes":     8040,
+"rows": 404 
+},
+"geom13_line_pred_chunk269.tsv": {
+ "bytes":     8064,
+"rows": 404 
+},
+"geom13_line_pred_chunk270.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk271.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk272.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk273.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk274.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk275.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk276.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk277.tsv": {
+ "bytes":     8086,
+"rows": 404 
+},
+"geom13_line_pred_chunk278.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk279.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk280.tsv": {
+ "bytes":     8038,
+"rows": 404 
+},
+"geom13_line_pred_chunk281.tsv": {
+ "bytes":     8086,
+"rows": 404 
+},
+"geom13_line_pred_chunk282.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk283.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk284.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk285.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk286.tsv": {
+ "bytes":     8046,
+"rows": 404 
+},
+"geom13_line_pred_chunk287.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk288.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk289.tsv": {
+ "bytes":       84,
+"rows": 4 
+},
+"geom13_line_pred_chunk290.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk291.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk292.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk293.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk294.tsv": {
+ "bytes":       88,
+"rows": 4 
+},
+"geom13_line_pred_chunk295.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk296.tsv": {
+ "bytes":     7888,
+"rows": 404 
+},
+"geom13_line_pred_chunk297.tsv": {
+ "bytes":     7984,
+"rows": 404 
+},
+"geom13_line_pred_chunk298.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk299.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk300.tsv": {
+ "bytes":     8006,
+"rows": 404 
+},
+"geom13_line_pred_chunk301.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk302.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk303.tsv": {
+ "bytes":     7860,
+"rows": 404 
+},
+"geom13_line_pred_chunk304.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk305.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk306.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk307.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk308.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk309.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk310.tsv": {
+ "bytes":     8072,
+"rows": 404 
+},
+"geom13_line_pred_chunk311.tsv": {
+ "bytes":     8086,
+"rows": 404 
+},
+"geom13_line_pred_chunk312.tsv": {
+ "bytes":     8062,
+"rows": 404 
+},
+"geom13_line_pred_chunk313.tsv": {
+ "bytes":     7986,
+"rows": 404 
+},
+"geom13_line_pred_chunk314.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk315.tsv": {
+ "bytes":     8044,
+"rows": 404 
+},
+"geom13_line_pred_chunk316.tsv": {
+ "bytes":     7950,
+"rows": 404 
+},
+"geom13_line_pred_chunk317.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk318.tsv": {
+ "bytes":     7982,
+"rows": 404 
+},
+"geom13_line_pred_chunk319.tsv": {
+ "bytes":     7972,
+"rows": 404 
+},
+"geom13_line_pred_chunk320.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk321.tsv": {
+ "bytes":     8086,
+"rows": 404 
+},
+"geom13_line_pred_chunk322.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk323.tsv": {
+ "bytes":     8088,
+"rows": 404 
+},
+"geom13_line_pred_chunk324.tsv": {
+ "bytes":     8088,
+"rows": 404 
+} 
+} 
 },
 "geom14_text_pred": {
  "geom": "text",
@@ -1495,7 +4381,7 @@
 "hjust": "ifelse(Ensemble == \"ignoré\", 0.5, 0)",
 "key": "Ensemble",
 "label": "sprintf(\"N=%d données %s\", N, Ensemble)",
-"showSelected1": "tendence_difficulté_Nentraînement"
+"showSelected1": "tendance_difficulté_Nentraînement"
 },
 "params": {
  "parse": false,
@@ -1504,8 +4390,8 @@
 "na.rm": false,
 "colour": "#7F7F7F",
 "help": "Texte pour nombre d’échantillons dans chaque ensemble",
-"showSelected": "tendence_difficulté_Nentraînement",
-"help_showSelected": "tendence_difficulté_Nentraînement" 
+"showSelected": "tendance_difficulté_Nentraînement",
+"help_showSelected": "tendance_difficulté_Nentraînement" 
 },
 "types": {
 "x": "numeric",
@@ -1525,12 +4411,18 @@
  "showSelected1" 
 ],
 "chunks": 1,
-"total": 1 
+"total": 1,
+"chunk_info": {
+ "geom14_text_pred_chunk1.tsv": {
+ "bytes":    62063,
+"rows": 936 
+} 
+} 
 } 
 },
 "duration": {
  "bloc.test":     1000,
-"tendence_difficulté_Nentraînement":     1000 
+"tendance_difficulté_Nentraînement":     1000 
 },
 "selectors": {
  "Algorithme": {
@@ -1561,12 +4453,12 @@
  "geom3_point_overview" 
 ] 
 },
-"tendence_difficulté_Nentraînement": {
+"tendance_difficulté_Nentraînement": {
  "is.variable.value": false,
 "type": "single",
 "showSelected": true,
 "clickSelects": true,
-"chunks": [ "tendence_difficulté_Nentraînement_bloc.test", "tendence_difficulté_Nentraînement" ],
+"chunks": [ "tendance_difficulté_Nentraînement_bloc.test", "tendance_difficulté_Nentraînement" ],
 "selected": "sin facile 1000",
 "levels": [ "constante facile 10", "constante facile 17", "constante facile 31", "constante facile 56", "constante facile 100", "constante facile 178", "constante facile 316", "constante facile 563", "constante facile 1000", "constante dificile 10", "constante dificile 17", "constante dificile 31", "constante dificile 56", "constante dificile 100", "constante dificile 178", "constante dificile 316", "constante dificile 563", "constante dificile 1000", "constante impossible 10", "constante impossible 17", "constante impossible 31", "constante impossible 56", "constante impossible 100", "constante impossible 178", "constante impossible 316", "constante impossible 563", "constante impossible 1000", "sin facile 10", "sin facile 17", "sin facile 31", "sin facile 56", "sin facile 100", "sin facile 178", "sin facile 316", "sin facile 563", "sin facile 1000", "sin dificile 10", "sin dificile 17", "sin dificile 31", "sin dificile 56", "sin dificile 100", "sin dificile 178", "sin dificile 316", "sin dificile 563", "sin dificile 1000", "sin impossible 10", "sin impossible 17", "sin impossible 31", "sin impossible 56", "sin impossible 100", "sin impossible 178", "sin impossible 316", "sin impossible 563", "sin impossible 1000" ],
 "update": [
@@ -1587,7 +4479,7 @@
 "type": "single",
 "clickSelects": true,
 "showSelected": true,
-"chunks": "tendence_difficulté_Nentraînement_bloc.test",
+"chunks": "tendance_difficulté_Nentraînement_bloc.test",
 "selected": "1",
 "levels": [ "1", "2", "3", "4", "5", "6" ],
 "update": [
@@ -1616,7 +4508,7 @@
 "entries": [
  {
  "pointcolour": "transparent",
-"pointshape":       19,
+"pointshape":       21,
 "pointsize":      1.5,
 "pointstroke":      0.5,
 "label": "pas significative",
@@ -1624,7 +4516,7 @@
 },
 {
  "pointcolour": "#000000",
-"pointshape":       19,
+"pointshape":       21,
 "pointsize":      1.5,
 "pointstroke":      0.5,
 "label": "significative",
@@ -1651,7 +4543,7 @@
 "label": "arbre de décision",
 "pointsize":        2,
 "pointfill": "#FF0000",
-"pointshape":       19,
+"pointshape":       21,
 "pointcolour": "#000000",
 "pointstroke":      0.5 
 },
@@ -1663,7 +4555,7 @@
 "label": "sans caractères",
 "pointsize":        4,
 "pointfill": "#00BFFF",
-"pointshape":       19,
+"pointshape":       21,
 "pointcolour": "#000000",
 "pointstroke":      0.5 
 } 
@@ -1696,7 +4588,7 @@
  "PANEL": [ "1", "2", "3", "4", "5", "6" ],
 "ROW": [ 1, 1, 1, 2, 2, 2 ],
 "COL": [ 1, 2, 3, 1, 2, 3 ],
-"tendence": [ "constante", "constante", "constante", "sin", "sin", "sin" ],
+"tendance": [ "constante", "constante", "constante", "sin", "sin", "sin" ],
 "difficulté": [ "facile", "dificile", "impossible", "facile", "dificile", "impossible" ],
 "SCALE_X": [ 1, 1, 1, 1, 1, 1 ],
 "SCALE_Y": [ 1, 1, 1, 1, 1, 1 ],
@@ -2074,7 +4966,7 @@
 "0.02",
 "0.04" 
 ],
-"title": "Choisir tendence, difficulté, Nentraînement",
+"title": "Choisir tendance, difficulté, Nentraînement",
 "title_size": "14.4pt",
 "options": {
  "width":      600,
